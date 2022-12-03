@@ -1,0 +1,10 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.bourbonuser",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "birthday": "1986-03-01"
+        }
+    }
+]

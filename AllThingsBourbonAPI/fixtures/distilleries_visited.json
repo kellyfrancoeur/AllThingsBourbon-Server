@@ -1,0 +1,12 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.distilleryvisited",
+        "pk": 1,
+        "fields": {
+            "distillery_enthusiast": 1,
+            "distillery": 1,
+            "comments": "So cool!",
+            "rating": 5
+        }
+    }
+]

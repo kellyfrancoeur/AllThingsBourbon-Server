@@ -1,0 +1,98 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 1,
+        "fields": {
+            "name": "Manhattan",
+            "ingredients": "2oz Rye whiskey, 3/4oz Sweet red vermouth, a few dashes of Angostura bitters, maraschino cherry, orange peel",
+            "how_to_make": "Place ice in a cocktail shaker. Add the whiskey, vermouth, and a dash of bitters. Rub the orange peel around the rim of the cocktail glass. Strain the drink into the glass. Add 1 to 2 maraschino cherries.",
+            "cocktail_img": "https://assets-prd.punchdrink.com/wp-content/uploads/2013/09/Manhattan.jpg",
+            "type_of_cocktail": 1,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 2,
+        "fields": {
+            "name": "Old Fashioned",
+            "ingredients": "1tsp sugar, 3 dashes of Angostura bitters, 1tsp water, 2oz bourbon, orange twist",
+            "how_to_make": "Add the sugar and bitters into a mixing glass, then add the water, and stir until the sugar is nearly dissolved. Fill the mixing glass with ice, add the bourbon, and stir until well-chilled. Strain into a rocks glass over one large ice cube. Express the oil of an orange twist over the glass, then drop into the glass to garnish.",
+            "cocktail_img": "https://asassyspoon.com/wp-content/uploads/cuban-old-fashioned-recipe-a-sassy-spoon-1.jpg",
+            "type_of_cocktail": 1,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 3,
+        "fields": {
+            "name": "Bourbon Rickey",
+            "ingredients": "1 1/2oz bourbon, 1/2 lime - freshly squeezed, sparkling water - to top",
+            "how_to_make": "Fill a highball glass with ice. Squeeze the lime half into the glass and drop it in. Add the bourbon and fill with sparkling water. Stir briefly to combine",
+            "cocktail_img": "https://asassyspoon.com/wp-content/uploads/cuban-old-fashioned-recipe-a-sassy-spoon-1.jpg",
+            "type_of_cocktail": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 4,
+        "fields": {
+            "name": "Southern Knight",
+            "ingredients": "2oz bourbon, 1oz lemon juice, 1/2oz strawberry syrup, top with ginger beer, 1 strawberry, 2cups ice",
+            "how_to_make": "Combine bourbon, lemon juice, strawberry syrup and 1 cup of ice into shaker and shake to dilute and chill mixture. Strain into a serving glass and top with ginger beer. Garnish with a strawberry.",
+            "cocktail_img": "https://vinepair.com/wp-content/uploads/2016/08/southern-knight-social.jpg",
+            "type_of_cocktail": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 5,
+        "fields": {
+            "name": "Bourbon Black Forest",
+            "ingredients": "2oz bourbon, 3/4oz cherry brandy, 1/2oz brown creme de cacao, 1/4oz Kahlua, 1-3 maraschino cherries",
+            "how_to_make": "Put a cherry into cocktail glass. Put a handful of ice into a cocktail shaker or jug then add all of the alcohol. Stir for 20 seconds then strain into the glasses. Float a little double cream over the top of the cocktail. Sprinkle with grated chocolate or a little sieved cocoa powder.",
+            "cocktail_img": "https://www.littlesugarsnaps.com/wp-content/uploads/2016/12/Black-Forest-Martini-3194.jpg",
+            "type_of_cocktail": 3,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 6,
+        "fields": {
+            "name": "Scofflaw",
+            "ingredients": "2oz bourbon, 1oz dry vermouth, 1/4oz freshly squeezed lemon juice, 1 to 2 dashes grenadine, 1 dash orange bitters",
+            "how_to_make": "Add the whiskey, dry vermouth, lemon juice, grenadine and orange bitters into a shaker with ice and shake until well-chilled. Strain into a chilled cocktail glass.",
+            "cocktail_img": "https://www.liquor.com/thmb/ij71IkY-ZRRfcOJ0ME2BWbSpPLo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/scofflaw-720x720-primary-33863f0661df463ba850d1c4ce177c5b.jpg",
+            "type_of_cocktail": 3,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 7,
+        "fields": {
+            "name": "Maple Bourbon Old Fashioned",
+            "ingredients": "2oz bourbon, 3-4 dashes of Angostura bitters, 1/2tsp maple syrup, orange peel, ice, optional - 1 maraschino cherry",
+            "how_to_make": "Use a vegetable peeler or knife to carefully cut a 2- to 3-inch-long piece of orange peel.  Run the pulp-side of the peel around the rim of the cocktail glass, then set the peel aside for later. Add the bourbon, bitters, and maple syrup to the glass, and briefly stir to combine.  Add the ice, then briefly stir the drink one more time to mix and chill. Give the orange peel a good twist above the glass to release its oils, then tuck it into the drink.  Add a maraschino cherry (if using) and serve immediately.",
+            "cocktail_img": "https://www.gimmesomeoven.com/wp-content/uploads/2018/10/Maple-Old-Fashioned-Cocktail-Drink-Recipe-2-768x1152.jpg",
+            "type_of_cocktail": 4,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 8,
+        "fields": {
+            "name": "Black Manhattan",
+            "ingredients": "2oz rye whiskey, 1oz Averna amaro, 1 dash Angostura bitters, 1 dash orange bitters, brandied cherry to garnish",
+            "how_to_make": "Add the rye whiskey, Averna, Angostura bitters and orange bitters into a mixing glass with ice and stir until well-chilled. Strain into a chilled coupe glass. Garnish with a brandied cherry.",
+            "cocktail_img": "https://www.liquor.com/thmb/Ow9Bn17iGvX5aSEVtv50AZm9xdc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/black-manhattan-720x720-primary-a3f31b11acb748349c1b6c310b9213f9.jpg",
+            "type_of_cocktail": 4,
+            "staff_member": 1
+        }
+    }
+]

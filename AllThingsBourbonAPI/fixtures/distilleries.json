@@ -1,0 +1,98 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 1,
+        "fields": {
+            "name": "45th Parallel Spirits",
+            "location": "1570 Madison Avenue, New Richmond, WI 54017",
+            "description": "From start to finish, every step of production occurs under our control in our facility in New Richmond, Wisconsin. Our more traditional methods of mashing, fermenting, distilling and aging require more effort and are more costly than other more modern methods. Nevertheless, we understand that exceptional results often require patience. Our patience and hard work provide you with the finest quality of artisan spirits. We take our time in order to deliver smooth flavorful spirits for you to enjoy.",
+            "link_to_site": "http://45thparalleldistillery.com/",
+            "distillery_img": "https://images.squarespace-cdn.com/content/v1/556b3a8be4b097b45d9928df/1652476782228-C1X2VV0ISJ3S5GRKHLO3/45th+parallel.jpeg?format=1500w",
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 2,
+        "fields": {
+            "name": "A. Smith Bowman Distillery",
+            "location": "1 Bowman Drive, Fredericksburg, VA 22408",
+            "description": "As a small and American family owned company, A. Smith Bowman Distillery balances time-honored traditions with innovation and creativity to produce hand-crafted spirits. Distilled from the finest ingredients, the premium products created at A Smith Bowman Distillery honor the legacy and ground breaking spirit of Virginia's pioneers.",
+            "link_to_site": "http://www.asmithbowman.com/",
+            "distillery_img": "https://www.metroweekly.com/wp-content/uploads/2014/11/A-Smith-Bowman-Distillery.jpg",
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 3,
+        "fields": {
+            "name": "Alamo Distilling Co.",
+            "location": "2030 E. Houston Street, San Antonio, TX 78202",
+            "description": "Here at Alamo Distilling Co. we embrace creativity and innovation, while honoring the values and traditions that make us Texan to the core. Being one of the few “Grain to Glass” Distilleries in Texas, we take pride in sourcing local grains, being there the whole way through for our products, and supporting our fellow local business owners and farmers. Our mission to handcraft premium quality spirits that boldly represent what makes San Antonio awesome, is what motivates and drives our team. We strive to bring some Texas spirit into every bottle that we make. Come visit us and partake in some south Texas magic.",
+            "link_to_site": "https://www.americanbourbonassociation.com/Alamo%20Distilling%20Co.",
+            "distillery_img": "https://dreamweek.org/wp-content/uploads/2021/11/Alamo-ALE.jpg",
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 4,
+        "fields": {
+            "name": "Angel's Envy Distillery",
+            "location": "500 E. Main Street, Louisville, KY 40202",
+            "description": "In the beginning, Angel’s Envy was an idea between father and son. Eventually, a grandson became involved. Our small family brand began to grow. During those early days, we never anticipated just how much growth we’d see. Today, Angel’s Envy is a hand crafted, small batch whiskey produced by Louisville Distilling Company, a subsidiary of Bacardi Limited.",
+            "link_to_site": "https://www.americanbourbonassociation.com/Angel's%20Envy%20Distillery",
+            "distillery_img": "https://americanwhiskeytrail.distilledspirits.org/sites/default/files/styles/flexslider_full/public/distillery/field_slides/aNGELS%20ENVY.jpg?itok=Zfgjv4sH",
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 5,
+        "fields": {
+            "name": "Barrel House Distilling Co.",
+            "location": "1200 Manchester Street, Building #9, Lexington, KY 40504",
+            "description": "It began when a group of long time friends, playing poker, tossed around the idea of starting a small batch distillery in Lexington, a city rich in distilling heritage. Two of the friends went all-in, establishing their new company in the barreling house of an old Lexington bourbon distillery.",
+            "link_to_site": "http://barrelhousedistillery.com",
+            "distillery_img": "https://s3-media0.fl.yelpcdn.com/bphoto/sEyLiKHZhtdqkfwKPP-8YA/348s.jpg",
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 6,
+        "fields": {
+            "name": "Big Bottom Whiskey",
+            "location": "21420 NW Nicholas Court, Suite D-9, Hillsboro, OR 97124",
+            "description": "Inspired by the craft spirit movement in Oregon, Ted Pappas opened the doors to Big Bottom Whiskey in 2010 as the premier independent bottler of whiskeys located in Hillsboro, Oregon. Not only does Big Bottom Whiskey offer a 36% rye American straight bourbon, Ted also focuses on producing specialty finished bourbons such as the multiple awards winning, Port Cask Finished Bourbon.",
+            "link_to_site": "http://www.bigbottomwhiskey.com",
+            "distillery_img": "https://thewhiskeywash.com/wp-content/uploads/2016/07/bigbottom-deltarye.jpg",
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 7,
+        "fields": {
+            "name": "Buffalo Trace Distillery",
+            "location": "113 Great Buffalo Trace, Frankfort, KY 40601",
+            "description": "For over 200 years, our Distillery has been defined by a dedication to one craft: making fine bourbon whiskey. By honoring tradition and embracing change, Buffalo Trace Distillery has earned its place of leadership among the legendary spirits makers of the world. Take a look at this time honored craft from start to finish. No Distillery has earned more domestic and international accolades than Buffalo Trace. Writers, enthusiasts and spirits competitions around the globe have awarded more than 500 accolades to our brands. The title of “world’s most award-winning distillery” has been earned through the uncompromising dedication of our craftsmen for well over 200 years. Their passion for distilling, passed down for two centuries, is revered by experts worldwide. In 2013, Buffalo Trace Distillery added its most cherished distinction yet – National Historic Landmark. After taking more than 200 years to achieve, the Distillery joined this elite group of the most influential places in North America. This award, more important than any others, is for the Distillery, its people, its builders, its visionaries, its preservers and its protectors.",
+            "link_to_site": "http://www.buffalotracedistillery.com",
+            "distillery_img": "https://thewhiskeywash.com/wp-content/uploads/2015/06/buffalo-trace.jpg",
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.distillery",
+        "pk": 8,
+        "fields": {
+            "name": "Bulleit Distilling Co.",
+            "location": "3900 Benson Pike, Shelbyville, KY 40065",
+            "description": "To this day, Bulleit™ Bourbon is distilled and aged in the Bulleit family tradition. High rye content gives it a bold, spicy character with a distinctively smooth, clean finish. Kentucky limestone-filtered water provides a foundation for the bourbon's character, while charred American oak barrels lend a smoky backbone. Our aging philosophy is simple: we wait until our bourbon is ready.",
+            "link_to_site": "https://www.americanbourbonassociation.com/Bulleit%20Distilling%20Co.",
+            "distillery_img": "https://foodanddine.com/wp-content/uploads/2019/07/Bulleit-2.jpeg",
+            "staff_member": 1
+        }
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.bourbonstaff",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "bio": "I wanted to create a site for all bourbon enthusiasts. I hope you enjoy!"
+        }
+    }
+]

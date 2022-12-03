@@ -1,0 +1,12 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.bourbontried",
+        "pk": 1,
+        "fields": {
+            "bourbon_enthusiast": 1,
+            "bourbon": 1,
+            "comments": "Loved it!",
+            "rating": 4
+        }
+    }
+]
