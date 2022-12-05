@@ -1,0 +1,38 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "bourbon1",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "FrankieLikesBourbon",
+            "first_name": "Kelly",
+            "last_name": "Francoeur",
+            "email": "kfrancoeur@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-12-01T15:45:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "beststaff1",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "BourbonManager",
+            "first_name": "Burt",
+            "last_name": "Macklin",
+            "email": "bmac@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-01-01T15:45:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

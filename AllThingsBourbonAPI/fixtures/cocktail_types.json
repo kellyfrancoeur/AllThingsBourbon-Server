@@ -1,0 +1,30 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.cocktailtype",
+        "pk": 1,
+        "fields": {
+            "type": "Classic Cocktail"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktailtype",
+        "pk": 2,
+        "fields": {
+            "type": "Summer Cocktail"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktailtype",
+        "pk": 3,
+        "fields": {
+            "type": "Winter Cocktail"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktailtype",
+        "pk": 4,
+        "fields": {
+            "type": "Creative Twist on a Classic Cocktail"
+        }
+    }
+]

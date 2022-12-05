@@ -1,0 +1,58 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 1,
+        "fields": {
+            "type": "Standard Bourbon"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 2,
+        "fields": {
+            "type": "Kentucky Bourbon"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 3,
+        "fields": {
+            "type": "Straight Bourbon"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 4,
+        "fields": {
+            "type": "Small Batch & Single Barrel Bourbon"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 5,
+        "fields": {
+            "type": "Sour Mash Bond Bourbon"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 6,
+        "fields": {
+            "type": "Bottled in Bond Bourbon"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 7,
+        "fields": {
+            "type": "Blended Bourbon"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbontype",
+        "pk": 8,
+        "fields": {
+            "type": "High-Rye & Wheated Bourbon"
+        }
+    }
+]

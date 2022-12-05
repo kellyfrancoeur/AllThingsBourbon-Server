@@ -1,0 +1,100 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 1,
+        "fields": {
+            "label": "Aromatic"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 2,
+        "fields": {
+            "label": "Citrusy"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 3,
+        "fields": {
+            "label": "Earthy"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 4,
+        "fields": {
+            "label": "Fruity"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 5,
+        "fields": {
+            "label": "Full-Bodied"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 6,
+        "fields": {
+            "label": "Mellow"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 7,
+        "fields": {
+            "label": "Oaky"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 8,
+        "fields": {
+            "label": "Rich"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 9,
+        "fields": {
+            "label": "Robust"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 10,
+        "fields": {
+            "label": "Savory"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 11,
+        "fields": {
+            "label": "Smoky"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 12,
+        "fields": {
+            "label": "Sour"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 13,
+        "fields": {
+            "label": "Spicy"
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.descriptor",
+        "pk": 14,
+        "fields": {
+            "label": "Sweet"
+        }
+    }
+]

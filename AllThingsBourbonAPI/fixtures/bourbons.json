@@ -1,0 +1,138 @@
+[
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 1,
+        "fields": {
+            "name": "Old Rip Van Winkle 10 Year",
+            "proof": 107,
+            "aroma": "Sweet, spicy, caramel-nut-fudge",
+            "taste": "Fruity, medium to full-bodied  palate with intense dried fruit and toasted nuts notes",
+            "finish": "Very long, bold wave of peppery brown spices, floral honey, and charred barrel flavors",
+            "description": "This wonderful bourbon is bottled as close to barrel proof as possible. We add just a splash of our Kentucky limestone well-water when we empty the barrels for bottling. Thus, this whiskey is as smooth as any you will find.",
+            "made_in": "Frankfort, KY",
+            "link_to_buy": "https://www.reservebar.com/products/old-rip-van-winkle-aged-10-years/GROUPING-367110.html",
+            "bourbon_img": "https://cdn.shopify.com/s/files/1/0069/8141/9069/products/DSC_4280.jpg?v=1569302563",
+            "type_of_bourbon": 8,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 2,
+        "fields": {
+            "name": "Van Winkle Special Reserve 12 Year",
+            "proof": 90.4,
+            "aroma": "Luscious, complex toffee",
+            "taste": "Round, supple entry, leading to dry, expansive medium body",
+            "finish": "Lengthy, enveloping with notes of caramel, nuts, and brown spices",
+            "description": "Van Winkle Special Reserve is the perfect combination of age and proof. This sweet, full-bodied whiskey has been described by some as “nectar.” The 12 years of aging and medium proof seem to be just right in creating a very pleasant drink of whiskey. This fine bourbon can compete with any excellent cognac as an after-dinner drink. The overall impression is rich and deep.",
+            "made_in": "Frankfort, KY",
+            "link_to_buy": "https://www.reservebar.com/products/old-rip-van-winkle-aged-12-years/GROUPING-46276.html",
+            "bourbon_img": "https://cdn.shopify.com/s/files/1/0350/4717/8372/products/yfnnmajif2jl5jyzw1nd.jpg?v=1669320995",
+            "type_of_bourbon": 8,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 3,
+        "fields": {
+            "name": "Pappy Van Winkle's Family Reserve 15 Year",
+            "proof": 107,
+            "aroma": "",
+            "taste": "Rich supple entry, leading to a decadent, huge, full bodied palate with intense caramel, toffee, and pepper brown spice.",
+            "finish": "Extreme, long, complex, evolving fade of spice and wood notes",
+            "description": "This bourbon was crafted according to our exclusive family wheated recipe. The smooth, oak flavor blends well with the barrel proof. Selected from barrels in the heart of our Kentucky warehouse, this bourbon has remained untouched for 15 years and unhurried by time.",
+            "made_in": "Frankfort, KY",
+            "link_to_buy": "https://www.caskers.com/pappy-van-winkle-family-reserve-15-year-old-bourbon-whiskey/",
+            "bourbon_img": "https://cdn.caskers.com/catalog/product/cache/ce56bc73870585a38310c58e499d2fd4/p/a/pappy-van-winkle-15-year-old-bourbon-whiskey-_1.jpg",
+            "type_of_bourbon": 8,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 4,
+        "fields": {
+            "name": "Buffalo Trace",
+            "proof": 90,
+            "aroma": "Complex aroma of vanilla, mint, and molasses",
+            "taste": "Pleasantly sweet to the taste with notes of brown sugar and spice that give way to oak, toffee, dark fruit, and anise.",
+            "finish": "Finishes long and smooth with serious depth",
+            "description": "Ancient buffalo carved paths through the wilderness that led American pioneers and explorers to new frontiers. One such trail led to the banks of the Kentucky River where Buffalo Trace Distillery has been making bourbon whiskey the same way for more than 200 years. In tribute to the mighty buffalo and the rugged, independent spirit of the pioneers who followed them, we created our signature Buffalo Trace Kentucky Straight Bourbon Whiskey.",
+            "made_in": "Frankfort, KY",
+            "link_to_buy": "https://www.reservebar.com/products/buffalo-trace-kentucky-straight-bourbon-whiskey/GROUPING-33143.html",
+            "bourbon_img": "https://cdn.caskers.com/catalog/product/cache/ce56bc73870585a38310c58e499d2fd4/b/u/buffalo-trace-kentucky-straight-bourbon-whiskey-1-n.jpg",
+            "type_of_bourbon": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 5,
+        "fields": {
+            "name": "Maker's Mark",
+            "proof": 90,
+            "aroma": "Sweet oak, vanilla, bright fruit and wheat ",
+            "taste": "Sweet with balance of oak, vanilla, and fruity essences",
+            "finish": "Smooth and creamy with a pleasant soft spice and clean finish",
+            "description": "This one changed the way we think of bourbon, all because one man changed the way he thought about making it. Bill Samuels, Sr., simply wanted a whisky he would enjoy drinking. Never bitter or sharp, Maker's Mark® is made with soft red winter wheat, instead of the usual rye, for a one-of-a-kind, full-flavored bourbon that's easy to drink. To ensure consistency, we rotate every barrel by hand and age our bourbon to taste, not time. Each and every bottle of Maker's® is still hand-dipped in our signature red wax at our distillery in Loretto, Ky., just like Bill, Sr., would have wanted.",
+            "made_in": "Loretto, KY",
+            "link_to_buy": "https://www.reservebar.com/products/makers-mark-kentucky-straight-bourbon-whisky/GROUPING-33888.html",
+            "bourbon_img": "https://icdn.bottlenose.wine/images/full/551237.jpg?min-w=200&min-h=200&fit=crop",
+            "type_of_bourbon": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 6,
+        "fields": {
+            "name": "Maker's Mark 46",
+            "proof": 94,
+            "aroma": "Hints of toasty French oak, caramel and baking spices",
+            "taste": "Mildly sweet and uniquely layered with deep rich notes of vanilla and baking spice",
+            "finish": "Velvety, subtle and pleasingly long",
+            "description": "French oaked for layers of flavor, Maker's 46® is the taste vision of Bill Samuels, Jr. Creating his signature bourbon requires first-of-its-kind finishing that begins with fully matured cask strength Maker’s Mark®. Ten seared French oak staves are fitted into the barrel before the whisky is finished to maturity under ideal conditions in our limestone cellar. The result is an easy-to-sip bourbon with notes of caramel, vanilla and baking spice that greet the palate in layers. Capturing the 46 taste vision took some doing. But all you need to figure out is your favorite way to enjoy Bill, Jr.’s recipe.",
+            "made_in": "Loretto, KY",
+            "link_to_buy": "https://www.reservebar.com/products/makers-46-bourbon-whisky/GROUPING-34281.html",
+            "bourbon_img": "https://www.gramercywine.com/images/labels/maker-s-mark-46-bourbon.gif",
+            "type_of_bourbon": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 7,
+        "fields": {
+            "name": "Maker's Mark 101",
+            "proof": 101,
+            "aroma": "Ripe fruit with bold spice on nose",
+            "taste": "Rich, creamy and soft with spice, fruit and caramel",
+            "finish": "Mellow, creamy midpalate finish that pleasantly lingers",
+            "description": "It’s everything you love about Maker’s Mark® with a whole lot more to love. Our founder himself, Bill Samuels, Sr., was the first fan of this high proof bourbon. Bill liked to tuck a little 101 aside for friends and special occasions. And for a long time, this was the only way you could experience these intensified notes of caramel and spice brought on by the higher proof – yet matched with that familiar Maker’s Mark® smoothness. Now – at special times during the year – this limited release is available for you to share with guests of your own. Learn about how the whisky at the core of Maker’s Mark® 101 is brought to life below.",
+            "made_in": "Loretto, KY",
+            "link_to_buy": "https://flaviar.com/makers-mark/makers-mark-101-proof-bourbon-whisky/tasting-notes-reviews/",
+            "bourbon_img": "https://cdn11.bigcommerce.com/s-hw4h0s3mr6/images/stencil/1280x1280/products/245088/13141/341634__37022.1649307675.jpg?c=1",
+            "type_of_bourbon": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 8,
+        "fields": {
+            "name": "Knob Creek 9 Year",
+            "proof": 100,
+            "aroma": "Grabs you with vanilla, clove, cinnamon, and caramel",
+            "taste": "Robust oak taste, complemented with hints of smooth vanilla and layered caramel.",
+            "finish": "Finishes with oak with some drying tannins and a little toffee hanging around",
+            "description": "When it comes to making Knob Creek Bourbon, there's a lot of waiting but hardly any sitting around. While each barrel patiently ages in white oak, our distillers continue to raise the standards, fulfilling their commitment to full flavor.",
+            "made_in": "Clermont, KY",
+            "link_to_buy": "https://flaviar.com/knob-creek/knob-creek-9-year-old-small-batch-bourbon/tasting-notes-reviews/?_sgm_campaign=product&_sgm_source=3745%7Cbrand&_sgm_action=search&_sgm_term=Knob+Creek+9+year",
+            "bourbon_img": "https://cdn11.bigcommerce.com/s-a04d0/images/stencil/1280x1280/products/12281/13047/knob-creek-small-batch-9-year-old-kentucky-straight-bourbon-whiskey__07463.1668482122.jpg?c=2",
+            "type_of_bourbon": 4,
+            "staff_member": 1
+        }
+    }
+]
