@@ -1,4 +1,3 @@
-"""View module for handling requests for customer data"""
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -67,7 +66,7 @@ class DistilleryView(ViewSet):
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
     
-    def destroy(self, request, pk=None):
+    def destroy(self, request, pk):
         """Handle DELETE requests for a distillery
 
         Returns:

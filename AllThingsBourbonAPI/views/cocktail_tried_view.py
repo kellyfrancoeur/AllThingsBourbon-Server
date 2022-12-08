@@ -1,4 +1,3 @@
-"""View module for handling requests for customer data"""
 from django.http import HttpResponseServerError
 from django.db.models import Case, When, Value, IntegerField, BooleanField
 from rest_framework.viewsets import ViewSet
@@ -80,6 +79,18 @@ class CocktailsTriedView(ViewSet):
         cocktail_tried.cocktail = cocktail
 
         cocktail_tried.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a cocktail tried
+
+        Returns:
+        Response -- Empty body with 204 status code
+        """
+
+        cocktail_tried = CocktailTried.objects.get(pk=pk)
+        cocktail_tried.delete()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
     

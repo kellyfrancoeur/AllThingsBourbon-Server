@@ -1,4 +1,3 @@
-"""View module for handling requests for customer data"""
 from django.http import HttpResponseServerError
 from django.db.models import Case, When, Value, IntegerField, BooleanField
 from rest_framework.viewsets import ViewSet
@@ -80,6 +79,18 @@ class DistilleriesVisitedView(ViewSet):
         distillery_visited.distillery = distillery
 
         distillery_visited.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a distillery visited
+
+        Returns:
+        Response -- Empty body with 204 status code
+        """
+
+        distillery_visited = DistilleryVisited.objects.get(pk=pk)
+        distillery_visited.delete()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
     

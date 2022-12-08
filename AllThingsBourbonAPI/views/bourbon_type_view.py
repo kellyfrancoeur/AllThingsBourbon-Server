@@ -1,4 +1,3 @@
-"""View module for handling requests about game types"""
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -15,8 +14,8 @@ class BourbonTypeView(ViewSet):
         Returns:
             Response -- JSON serialized bourbon type
         """
-        bourbon_type = BourbonType.objects.get(pk=pk)
-        serializer = BourbonTypeSerializer(bourbon_type)
+        type_of_bourbon = BourbonType.objects.get(pk=pk)
+        serializer = BourbonTypeSerializer(type_of_bourbon)
         return Response(serializer.data)
 
     def list(self, request):
@@ -25,8 +24,8 @@ class BourbonTypeView(ViewSet):
         Returns:
             Response -- JSON serialized list of bourbon types
         """
-        bourbon_types = BourbonType.objects.all()
-        serializer = BourbonTypeSerializer(bourbon_types, many=True)
+        type_of_bourbons = BourbonType.objects.all()
+        serializer = BourbonTypeSerializer(type_of_bourbons, many=True)
         return Response(serializer.data)
 
 class BourbonTypeSerializer(serializers.ModelSerializer):
