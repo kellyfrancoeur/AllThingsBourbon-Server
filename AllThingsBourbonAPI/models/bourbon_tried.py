@@ -16,3 +16,11 @@ class BourbonTried(models.Model):
     @is_bourbon_enthusiast.setter
     def is_bourbon_enthusiast(self, value):
         self.__bourbon_enthusiast = value
+
+    @property
+    def described(self):
+        return self.__described
+    
+    @described.setter
+    def described(self, value):
+        self.__described = value

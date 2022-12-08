@@ -7,7 +7,7 @@ from rest_framework import serializers, status
 from AllThingsBourbonAPI.models import Bourbon, BourbonTried, BourbonUser, Descriptor, BourbonDescriptor
 
 class BourbonsTriedView(ViewSet):
-
+    
     def retrieve(self, request, pk):
         """Handle GET requests for single bourbon tried
 
@@ -73,7 +73,7 @@ class BourbonsTriedView(ViewSet):
         for descriptor in descriptors:
             descriptor_to_assign = Descriptor.objects.get(pk=descriptor)
             tried_descriptor = BourbonDescriptor()
-            tried_descriptor.tried = tried
+            tried_descriptor.bourbon_tried = tried
             tried_descriptor.descriptor = descriptor_to_assign
             tried_descriptor.save()
 
@@ -110,6 +110,18 @@ class BourbonsTriedView(ViewSet):
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a bourbon tried
+
+        Returns:
+        Response -- Empty body with 204 status code
+        """
+
+        bourbon_tried = BourbonTried.objects.get(pk=pk)
+        bourbon_tried.delete()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 class BourbonUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = BourbonUser
@@ -118,12 +130,12 @@ class BourbonUserSerializer(serializers.ModelSerializer):
 class BourbonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bourbon
-        fields = ('name')
+        fields = ('name',)
 
 class BourbonDescriptorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Descriptor
-        fields = ('label')
+        fields = ('label',)
 
 
 class BourbonsTriedSerializer(serializers.ModelSerializer):
