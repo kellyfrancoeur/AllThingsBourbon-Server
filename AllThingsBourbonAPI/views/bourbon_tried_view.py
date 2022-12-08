@@ -1,11 +1,10 @@
-"""View module for handling requests for customer data"""
 from django.http import HttpResponseServerError
 from rest_framework.decorators import action
 from django.db.models import Case, When, Value, IntegerField, BooleanField
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from AllThingsBourbonAPI.models import Bourbon, BourbonTried, BourbonUser, Descriptor
+from AllThingsBourbonAPI.models import Bourbon, BourbonTried, BourbonUser, Descriptor, BourbonDescriptor
 
 class BourbonsTriedView(ViewSet):
 
@@ -16,14 +15,14 @@ class BourbonsTriedView(ViewSet):
             Response -- JSON serialized bourbon tried
         """
         bourbon_user = BourbonUser.objects.get(user=request.auth.user)
-        bourbon_tried = BourbonTried.objects.get(pk=pk)
+        tried = BourbonTried.objects.get(pk=pk)
 
-        bourbon_tried.is_bourbon_enthusiast = False
+        tried.is_bourbon_enthusiast = False
 
-        if bourbon_tried.bourbon_enthusiast == bourbon_user:
-            bourbon_tried.is_bourbon_enthusiast = True
+        if tried.bourbon_enthusiast == bourbon_user:
+            tried.is_bourbon_enthusiast = True
 
-        serializer = BourbonsTriedSerializer(bourbon_tried, context={'request': request})
+        serializer = BourbonsTriedSerializer(tried, context={'request': request})
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def list(self, request):
@@ -57,14 +56,28 @@ class BourbonsTriedView(ViewSet):
         bourbon_enthusiast = BourbonUser.objects.get(user=request.auth.user)
         bourbon = Bourbon.objects.get(pk=request.data['bourbon'])
 
-        bourbon_tried = BourbonTried.objects.create(
+        descriptors = request.data["descriptors"]
+        for descriptor in descriptors:
+            try:
+                descriptor_to_assign = Descriptor.objects.get(pk=descriptor)
+            except Descriptor.DoesNotExist:
+                    return Response({"message": "Descriptor does not exist"}, status = status.HTTP_404_NOT_FOUND)
+
+        tried = BourbonTried.objects.create(
             comments = request.data['comments'],
             rating = request.data['rating'],
             bourbon = bourbon,
             bourbon_enthusiast = bourbon_enthusiast
         ) 
 
-        serialized = BourbonsTriedSerializer(bourbon_tried)
+        for descriptor in descriptors:
+            descriptor_to_assign = Descriptor.objects.get(pk=descriptor)
+            tried_descriptor = BourbonDescriptor()
+            tried_descriptor.tried = tried
+            tried_descriptor.descriptor = descriptor_to_assign
+            tried_descriptor.save()
+
+        serialized = BourbonsTriedSerializer(tried)
         return Response(serialized.data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk):
@@ -75,37 +88,42 @@ class BourbonsTriedView(ViewSet):
         """
         bourbon = Bourbon.objects.get(pk=pk)
 
-        bourbon_tried = BourbonTried.objects.get(pk=pk)
-        bourbon_tried.comments = request.data['comments']
-        bourbon_tried.rating = request.data['rating']
-        bourbon_tried.bourbon = bourbon
+        descriptors = request.data["descriptors"]
+        for descriptor in descriptors:
+            try:
+                descriptor_to_assign = Descriptor.objects.get(pk=descriptor)
+            except Descriptor.DoesNotExist:
+                    return Response({"message": "Descriptor does not exist"}, status = status.HTTP_404_NOT_FOUND)
 
-        bourbon_tried.save()
+        tried = BourbonTried.objects.get(pk=pk)
+        tried.comments = request.data['comments']
+        tried.rating = request.data['rating']
+        tried.bourbon = bourbon
+        tried.save()
+
+        for descriptor in descriptors:
+            descriptor_to_assign = Descriptor.objects.get(pk=descriptor)
+            tried_descriptor = BourbonDescriptor()
+            tried_descriptor.bourbon_tried = tried
+            tried_descriptor.descriptor = descriptor_to_assign
+            tried_descriptor.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
-    
-    @action(methods=['post', 'delete'], detail=True)
-    def bourbondescriptor(self, request, pk=None):
-        """Managing bourbon descriptors"""
-        bourbon_tried = BourbonTried.objects.get(pk=pk)
-        if request.method == "POST":
-            descriptor = Descriptor.objects.get(pk=request.data["descriptorId"])
-            bourbon_tried.descriptors.add(descriptor)
-            return Response({"Descriptor has been added"}, status=status.HTTP_204_NO_CONTENT)
-        elif request.method == "DELETE":
-            descriptor = Descriptor.objects.get(pk=request.data["descriptorId"])
-            bourbon_tried.descriptors.remove(descriptor)
-            return Response({"Descriptor has been removed"}, status=status.HTTP_204_NO_CONTENT)
 
 class BourbonUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = BourbonUser
-        fields = ('id', 'full_name',)
+        fields = ('full_name',)
 
 class BourbonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bourbon
-        fields = ('id', 'name', 'proof', 'aroma', 'taste', 'finish', 'description', 'made_in', 'bourbon_img', 'type_of_bourbon')
+        fields = ('name')
+
+class BourbonDescriptorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Descriptor
+        fields = ('label')
 
 
 class BourbonsTriedSerializer(serializers.ModelSerializer):
@@ -113,6 +131,7 @@ class BourbonsTriedSerializer(serializers.ModelSerializer):
     """
     bourbon_enthusiast = BourbonUserSerializer(many=False)
     bourbon = BourbonSerializer(many=False)
+    descriptors = BourbonDescriptorSerializer(many=True)
 
     class Meta:
         model = BourbonTried

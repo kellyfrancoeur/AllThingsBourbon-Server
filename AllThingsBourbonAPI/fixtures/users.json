@@ -3,7 +3,7 @@
         "model": "auth.user",
         "pk": 1,
         "fields": {
-            "password": "bourbon1",
+            "password": "pbkdf2_sha256$390000$zBrEukksFbA0XFULBQflQ2$PokgOiqFYQ/E7Wc2r+y9KEUUYxK6uS1F7HICU6V4IiI=",
             "last_login": null,
             "is_superuser": false,
             "username": "FrankieLikesBourbon",
@@ -21,7 +21,7 @@
         "model": "auth.user",
         "pk": 2,
         "fields": {
-            "password": "beststaff1",
+            "password": "pbkdf2_sha256$390000$zBrEukksFbA0XFULBQflQ2$PokgOiqFYQ/E7Wc2r+y9KEUUYxK6uS1F7HICU6V4IiI=",
             "last_login": null,
             "is_superuser": false,
             "username": "BourbonManager",

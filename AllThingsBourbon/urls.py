@@ -19,11 +19,12 @@ from django.urls import path
 from AllThingsBourbonAPI.views import register_user, login_user 
 from django.conf.urls import include
 from rest_framework import routers
-from AllThingsBourbonAPI.views import BourbonView, CocktailView, DistilleryView, CocktailTypeView, BourbonTypeView, BourbonUserView, BourbonStaffView, BourbonsTriedView, CocktailsTriedView, DistilleriesVisitedView
+from AllThingsBourbonAPI.views import BourbonView, CocktailView, DistilleryView, CocktailTypeView, BourbonTypeView, BourbonUserView, BourbonStaffView, BourbonsTriedView, CocktailsTriedView, DistilleriesVisitedView, DescriptorView
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'bourbons', BourbonView, 'bourbon')
+router.register(r'descriptors', DescriptorView, 'descriptor')
 router.register(r'cocktails', CocktailView, 'cocktail')
 router.register(r'distilleries', DistilleryView, 'distillery')
 router.register(r'bourbontypes', BourbonTypeView, 'bourbontype')

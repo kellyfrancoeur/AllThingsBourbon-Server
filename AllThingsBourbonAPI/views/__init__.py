@@ -9,3 +9,4 @@ from .bourbon_user_view import BourbonUserView
 from .bourbon_tried_view import BourbonsTriedView
 from .cocktail_tried_view import CocktailsTriedView
 from .distillery_visited_view import DistilleriesVisitedView
+from .descriptors_view import DescriptorView
