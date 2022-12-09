@@ -29,6 +29,18 @@ class BourbonUserView(ViewSet):
         user = BourbonUser.objects.get(pk=pk)
         serialized = BourbonUserSerializer(user, context={'request': request})
         return Response(serialized.data, status=status.HTTP_200_OK)
+    
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a bourbon member
+
+        Returns:
+        Response -- Empty body with 204 status code
+        """
+
+        user = BourbonUser.objects.get(pk=pk)
+        user.delete()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
 class BourbonUserSerializer(serializers.ModelSerializer):

@@ -78,7 +78,7 @@ class BourbonsTriedView(ViewSet):
             tried_descriptor.save()
 
         serialized = BourbonsTriedSerializer(tried)
-        return Response(serialized.data, status=status.HTTP_201_CREATED)
+        return Response({'message': 'Bourbon has been added!'}, serialized.data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk):
         """Handle PUT requests for a bourbon tried
@@ -108,7 +108,7 @@ class BourbonsTriedView(ViewSet):
             tried_descriptor.descriptor = descriptor_to_assign
             tried_descriptor.save()
 
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        return Response({'message': 'Bourbon has been updated!'}, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a bourbon tried
@@ -120,7 +120,7 @@ class BourbonsTriedView(ViewSet):
         bourbon_tried = BourbonTried.objects.get(pk=pk)
         bourbon_tried.delete()
 
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        return Response({'message': 'Bourbon has been removed'}, status=status.HTTP_204_NO_CONTENT)
 
 class BourbonUserSerializer(serializers.ModelSerializer):
     class Meta:
