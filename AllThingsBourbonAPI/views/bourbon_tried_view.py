@@ -125,17 +125,17 @@ class BourbonsTriedView(ViewSet):
 class BourbonUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = BourbonUser
-        fields = ('full_name',)
+        fields = ('id', 'full_name',)
 
 class BourbonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bourbon
-        fields = ('name',)
+        fields = ('id', 'name',)
 
 class BourbonDescriptorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Descriptor
-        fields = ('label',)
+        fields = ('id', 'label',)
 
 
 class BourbonsTriedSerializer(serializers.ModelSerializer):
