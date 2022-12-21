@@ -88,25 +88,12 @@ class BourbonsTriedView(ViewSet):
         """
         bourbon = Bourbon.objects.get(pk=pk)
 
-        descriptors = request.data["descriptors"]
-        for descriptor in descriptors:
-            try:
-                descriptor_to_assign = Descriptor.objects.get(pk=descriptor)
-            except Descriptor.DoesNotExist:
-                    return Response({"message": "Descriptor does not exist"}, status = status.HTTP_404_NOT_FOUND)
-
         tried = BourbonTried.objects.get(pk=pk)
         tried.comments = request.data['comments']
         tried.rating = request.data['rating']
         tried.bourbon = bourbon
+        tried.descriptors.set(request.data["descriptors"])
         tried.save()
-
-        for descriptor in descriptors:
-            descriptor_to_assign = Descriptor.objects.get(pk=descriptor)
-            tried_descriptor = BourbonDescriptor()
-            tried_descriptor.bourbon_tried = tried
-            tried_descriptor.descriptor = descriptor_to_assign
-            tried_descriptor.save()
 
         return Response({'message': 'Bourbon has been updated!'}, status=status.HTTP_204_NO_CONTENT)
 
