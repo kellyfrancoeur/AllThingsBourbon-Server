@@ -865,5 +865,175 @@
             "type_of_bourbon": 7,
             "staff_member": 1
         }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 50,
+        "fields": {
+            "name": "Milam & Greene Triple Cask Straight Bourbon Blend Whiskey",
+            "proof": 94,
+            "aroma": "Refined and elegant, with pops of vanilla, florals and spice.",
+            "taste": "Creamy and soft, surprisingly smooth for a 94 proof spirit.",
+            "finish": "Medium warm finish, with structure and tannins.",
+            "description": "Our premium Texas bourbon which is made from 70% Texas corn, 22% Pacific Northwest malted rye from Oregon & Washington, 8% Wyoming barley and our proprietary yeast recipe from Kentucky and Texas. Each bottle of Milam & Greene Triple Cask is a batch of three hand selected straight bourbon whiskies: our 2 to 3-year-old premium Texas bourbon for a pop of spice married with 3 to 4-year-old Kentucky whiskey for vanillas and fruits and 10 to 11-year-old Tennessee whiskey for structure and tannins. It is then proofed to taste and bottled on site.",
+            "made_in": "Blanco, TX",
+            "link_to_buy": "https://flaviar.com/milam-greene/milam-greene-triple-cask-straight-bourbon-whiskey/",
+            "bourbon_img": "https://cdn.shopify.com/s/files/1/0009/1688/1467/products/IMG_76272_1024x1024.jpg?v=1608578728",
+            "type_of_bourbon": 7,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 51,
+        "fields": {
+            "name": "High West American Prairie Bourbon",
+            "proof": 92,
+            "aroma": "Light caramel and sweet vanilla.",
+            "taste": "Rich and earthy on the palate with well balanced flavors of candy corn, honey nougat and sweet corn bread biscuits.",
+            "finish": "",
+            "description": "Meet the American West's most innovative and inviting bourbon. A blend of straight bourbon whiskeys, aged a minimum of two years in charred white American oak barrels. Never chill-filtered or carbon-treated and utilizing a variety of high rye content mash bills to convey an earthy complexity (with a bit of spice). The perfect marriage of richness and brightness expressed by notes of honey nougat, sweet cornbread biscuits, and lemon zest with caramel apples and pecan pie lingering on the finish. Whether sipped or stirred, this bourbon is blended to be your tried and true.",
+            "made_in": "Park City, UT",
+            "link_to_buy": "https://highwest.com/products/american-prairie-bourbon-375ml",
+            "bourbon_img": "http://cdn.shopify.com/s/files/1/0565/3017/4141/products/Screen_Shot_2021-04-01_at_2.43.41_PM__19662.png?v=1619282527",
+            "type_of_bourbon": 7,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 52,
+        "fields": {
+            "name": "Old Elk Blended Bourbon",
+            "proof": 88,
+            "aroma": "Freshly baked cinnamon rolls with powdered sugar icing mingle with a hint of walnut, dark cacao powder, and a hint of dry cedar bark.",
+            "taste": "The palate is very lush with a note of chocolate chip pancakes covered in brown butter and syrup with a dash of vanilla next to singed dry sweetgrass braids and a touch of burnt toffee.",
+            "finish": "The finish lets the chocolate turn velvety as a whisper of dried chili meets salted caramel.",
+            "description": "Old Elk is the work of distilling legend Greg Metze. Metze devised a bourbon through MGP of Indiana, a distillery in New York, and Old Elk’s facility in Colorado. The combined mash bill ended up being 51% corn, 34 percent malted barley, and 15 percent rye, which is one of the more unique mash bills in the game. The juice is then proofed down to a very accessible 88 proof.",
+            "made_in": "Fort Collins, CO",
+            "link_to_buy": "https://www.reservebar.com/products/old-elk-blended-straight-bourbon-whiskey/GROUPING-768669.html",
+            "bourbon_img": "https://global-uploads.webflow.com/5ace2bae31f6d3c07d267cb9/5c8299b02301c3f92f0dfbb1_Old-Elk-Blended-Bourbon-01a.jpg",
+            "type_of_bourbon": 7,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 53,
+        "fields": {
+            "name": "Widow Jane Aged 10 Years",
+            "proof": 91,
+            "aroma": "This has a matrix of rich vanilla pudding next to oranges infused with mulled wine spices and … Irish Spring soap. It definitely works and draws you in.",
+            "taste": "The palate is all marzipan and dark chocolate-covered brandy cherries that lead towards a dry maply syrup mid-palate.",
+            "finish": "The finish dries out a bit more while still holding onto the cherry, bitter dark chocolate, and almost woody maple syrup.",
+            "description": "This is sourced from Kentucky, Indiana, and Tennessee bourbons. The hand-selected barrels are sent to New York where they’re blended in small batches (no more than five barrels), proofed with New York limestone mine water, and bottled. What you’re paying for here is the exactness of a whiskey blender finding great barrels and knowing how to marry them to make something bigger and better.",
+            "made_in": "Brooklyn, NY",
+            "link_to_buy": "https://www.caskers.com/widow-jane-10-year-old-straight-bourbon-whiskey/",
+            "bourbon_img": "https://whiskeyconsensus.com/wp-content/uploads/2020/11/Widow-Jane-10-Year-Old-Bourbon-768x768.jpg",
+            "type_of_bourbon": 7,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 54,
+        "fields": {
+            "name": "Smooth Ambler Contradiction Bourbon",
+            "proof": 100,
+            "aroma": "Classic notes of bourbon vanilla and oak mingle with spicy stewed cherries buried in a sourdough pancake on the nose.",
+            "taste": "The palate holds onto that sweet fruit and spice, as notes of worn leather and soft cedar arrive with a hint of grain.",
+            "finish": "The end is short-ish with the spice, oak, and cherry lasting the longest until a nice and velvety vanilla mouthfeel arrives.",
+            "description": "Smooth Ambler is a great example of how smaller craft operations get up and running. This expression is a blend of sourced high-rye bourbon that’s aged for nine years with Smooth Ambler’s own-make, a wheated bourbon that’s aged for two years. The sourced bourbon is MGP of Indiana, giving the blenders a quality foundation to build their bourbon off of.",
+            "made_in": "Maxwelton, WV",
+            "link_to_buy": "https://www.caskers.com/smooth-ambler-contradiction-bourbon-whiskey/",
+            "bourbon_img": "https://cdn.shopify.com/s/files/1/1443/2172/products/Smooth_Ambler_Contradiction_1024x1024.jpg?v=1545218258",
+            "type_of_bourbon": 7,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 55,
+        "fields": {
+            "name": "Willett Pot Still Reserve Straight Bourbon Whiskey",
+            "proof": 94,
+            "aroma": "Brown sugar, molasses and caramel.",
+            "taste": "Hints of vanilla, cinnamon, caramel, butterscotch and mild coffee.",
+            "finish": "Sweet, smooth finish.",
+            "description": "In keeping with family tradition, Willett Pot Still Reserve is a mean single-barrel Kentucky straight bourbon. Aged for between eight and ten years, Willett Pot Still Reserve earned the Gold Medal for taste at the San Francisco World Spirits Competition in 2008, and the Double Gold Medal for design. Its unique shape and design are meant to resemble the pot still that was used for generations at the Willett Distilling Company. Soft and elegant on the nose, this bourbon has slight notes of vanilla, coconut and cinnamon. Each bottle is sealed with a label identifying the individual aging barrel, the number of the bottle within the series of bottles for that barrel, and the total number of bottles from the barrel.",
+            "made_in": "Bardstown, KY",
+            "link_to_buy": "https://www.caskers.com/willett-pot-still-reserve-straight-bourbon-whiskey/",
+            "bourbon_img": "https://cdn.shopify.com/s/files/1/0569/4826/0887/products/image_4ccbb033-3a40-47a0-8c69-ed7f18ee66eb.heic?v=1660704823&width=1946",
+            "type_of_bourbon": 3,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 56,
+        "fields": {
+            "name": "Brother's Bond Original Cask Strength Straight Bourbon Whiskey",
+            "proof": 115,
+            "aroma": "The nose is aromatic and rich with caramel, vanilla, and a pleasant sweetness with ripe banana aromas.",
+            "taste": "The palate is intense with honey, rye bread, dried fruit, orange marmalade, earthy, and nutty notes.",
+            "finish": "The finish is long with leather, hints of smoke, and rye spice.",
+            "description": "Brother's Bond Straight Bourbon Whiskey is more than just a celebrity brand from Vampire Diaries co-stars Ian Somerhalder and Paul Wesley. It's a delicious bourbon that's crafted with a mash bill of 65% corn, 22% rye, wheat, and barley sourced from American farms. Distilled in a copper column still and aged in American white oak (#4 char barrel staves and #2 char barrel heads), the expression has proved to be an easy-drinking and pleasant sipper that quickly found its place in the hearts of whiskey drinkers. Brother's Bond Cask Strength is a limited release of the expression that's bottled undiluted, unfiltered, and uncut at 115.8 proof, making for a rich, luxurious, balanced, and flavorful whiskey that has won a Gold Medal at the 2022 edition of the San Francisco World Spirits Competition.",
+            "made_in": "Lawrenceburg, IN",
+            "link_to_buy": "https://www.caskers.com/brother-s-bond-original-cask-strength-straight-bourbon-whiskey/",
+            "bourbon_img": "https://cdn.shopify.com/s/files/1/0232/3203/products/IMG_1122.jpg?v=1667580060",
+            "type_of_bourbon": 3,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 57,
+        "fields": {
+            "name": "Eagle Rare 10 Year Old Kentucky Straight Bourbon Whiskey",
+            "proof": 90,
+            "aroma": "Golden honey color, along with an aroma of gentle toast, fresh tobacco and bananas.",
+            "taste": "Notes of chocolate, almonds, melons, raisins and dried fruits on the palate, which are complemented by a subtle vanilla undertone.",
+            "finish": "Finish is long and fierce, with hints of roasted nuts and corn.",
+            "description": "Eagle Rare 10 Year Old Kentucky Straight Bourbon Whiskey was matured for a minimum of ten years in new, American oak casks under the intense, Kentucky sun. As a result of its decade-long beauty rest, the bourbon has a golden honey color, along with an aroma of gentle toast, fresh tobacco, and bananas. The aroma gives way to notes of chocolate, almonds, melons, raisins and dried fruits on the palate, which are complemented by a subtle vanilla undertone. The finish is long and fierce, with hints of roasted nuts and corn.",
+            "made_in": "Frankfort, KY",
+            "link_to_buy": "https://www.caskers.com/eagle-rare-10-year-old-kentucky-straight-bourbon-whiskey/",
+            "bourbon_img": "https://cdn.shopify.com/s/files/1/0232/3203/products/image_12633a7b-95c5-4217-93a2-a44a5a4d0da0.jpg?v=1486928047",
+            "type_of_bourbon": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 58,
+        "fields": {
+            "name": "Angel's Envy Kentucky Straight Bourbon Whiskey",
+            "proof": 86,
+            "aroma": "Subtle vanilla, raisins, maple syrup and toasted nuts.",
+            "taste": "Vanilla, ripe fruit, maple syrup, toast and bitter chocolate.",
+            "finish": "Clean and lingering sweetness with a hint of Madeira that slowly fades.",
+            "description": "Rooted in 200 years of bourbon heritage, we create hand-finished spirits that aren’t afraid to improve on the classic tradition. Inspired by legendary Master Distiller Lincoln Henderson’s lifetime spent crafting fine spirits, Angel’s Envy is our masterpiece. The 5% of spirit lost each year during barrel aging is called the “Angel’s Share.” After tasting our finished whiskey, Lincoln joked that we’d finally gotten a better deal than the angels. And so Angel’s Envy was born.",
+            "made_in": "Louisville, KY",
+            "link_to_buy": "https://www.caskers.com/angel-s-envy-kentucky-straight-bourbon/",
+            "bourbon_img": "https://cdn11.bigcommerce.com/s-ff6e5/images/stencil/1280x1280/products/8680/4165/IMG_3319__16789.1627618845.jpg?c=2",
+            "type_of_bourbon": 2,
+            "staff_member": 1
+        }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbon",
+        "pk": 59,
+        "fields": {
+            "name": "W.L. Weller Special Reserve Straight Bourbon Whiskey",
+            "proof": 90,
+            "aroma": "A sweet nose with a presence of caramel.",
+            "taste": "Tasting notes of honey, butterscotch, and a soft woodiness. It's smooth, delicate and calm.",
+            "finish": "Features a smooth finish with a sweet honeysuckle flair.",
+            "description": "The Original Wheated Bourbon Whiskey features an exceptionally smooth taste, substituting wheat for rye grain. Bottled at 90 proof, this bourbon stands out with its burnt orange color. Its softer flavor notes make this bourbon great for sipping or making cocktails.",
+            "made_in": "Frankfort, KY",
+            "link_to_buy": "https://www.caskers.com/w-l-weller-special-reserve-straight-bourbon-whiskey/",
+            "bourbon_img": "https://dw95zbr0bn7mn.cloudfront.net/compare/asset/99185/large_compare::product-308317-d7a3b426-2329-4f3d-89dd-6326d2a46fac.jpg",
+            "type_of_bourbon": 3,
+            "staff_member": 1
+        }
     }
 ]
