@@ -32,17 +32,8 @@ class BourbonsTriedView(ViewSet):
             Response -- JSON serialized list of bourbons tried
         """
         bourbon_user = BourbonUser.objects.get(user=request.auth.user)
+        bourbons_tried = BourbonTried.objects.filter(bourbon_enthusiast=bourbon_user)
 
-        bourbons_tried = BourbonTried.objects.annotate(
-               is_bourbon_enthusiast=Case(
-                   When(bourbon_enthusiast=bourbon_user,
-                        then=Value(True)),
-                   default=Value(False),
-                   output_field=BooleanField())) \
-                .all()
-
-        if "bourbon" in request.query_params:
-            bourbons_tried = BourbonTried.objects.filter(bourbon__id=request.query_params['bourbon'])
 
         serializer = BourbonsTriedSerializer(bourbons_tried, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
@@ -113,6 +104,7 @@ class BourbonUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = BourbonUser
         fields = ('id', 'full_name',)
+        depth = 2
 
 class BourbonSerializer(serializers.ModelSerializer):
     class Meta:
@@ -135,4 +127,4 @@ class BourbonsTriedSerializer(serializers.ModelSerializer):
     class Meta:
         model = BourbonTried
         fields = ('id', 'bourbon_enthusiast', 'bourbon', 'comments', 'rating', 'descriptors',)
-        depth = 1
+        depth = 2

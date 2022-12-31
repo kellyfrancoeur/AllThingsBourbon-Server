@@ -31,17 +31,7 @@ class DistilleriesVisitedView(ViewSet):
             Response -- JSON serialized list of distilleries visited
         """
         bourbon_user = BourbonUser.objects.get(user=request.auth.user)
-
-        distilleries_visited = DistilleryVisited.objects.annotate(
-               is_distillery_enthusiast=Case(
-                   When(distillery_enthusiast=bourbon_user,
-                        then=Value(True)),
-                   default=Value(False),
-                   output_field=BooleanField())) \
-                .all()
-
-        if "distillery" in request.query_params:
-            distilleries_visited = DistilleryVisited.objects.filter(distillery__id=request.query_params['distillery'])
+        distilleries_visited = DistilleryVisited.objects.filter(distillery_enthusiast=bourbon_user)
 
         serializer = DistilleriesVisitedSerializer(distilleries_visited, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)

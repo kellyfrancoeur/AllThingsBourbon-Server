@@ -1,0 +1,2 @@
+from .distilleriesVisited import DistilleryVisitedTests
+from .cocktailsTried import CocktailsTriedTests
