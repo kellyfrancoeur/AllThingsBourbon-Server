@@ -6,5 +6,13 @@
             "user": 2,
             "bio": "I wanted to create a site for all bourbon enthusiasts. I hope you enjoy!"
         }
+    },
+    {
+        "model": "AllThingsBourbonAPI.bourbonstaff",
+        "pk": 2,
+        "fields": {
+            "user": 4,
+            "bio": "I want to contribute to such a wonderful site and help people expand their knowledge of bourbon, just like it did for me!"
+        }
     }
 ]

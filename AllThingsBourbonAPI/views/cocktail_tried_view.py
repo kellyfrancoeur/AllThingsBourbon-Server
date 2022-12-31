@@ -31,17 +31,7 @@ class CocktailsTriedView(ViewSet):
             Response -- JSON serialized list of cocktails tried
         """
         bourbon_user = BourbonUser.objects.get(user=request.auth.user)
-
-        cocktails_tried = CocktailTried.objects.annotate(
-               is_cocktail_enthusiast=Case(
-                   When(cocktail_enthusiast=bourbon_user,
-                        then=Value(True)),
-                   default=Value(False),
-                   output_field=BooleanField())) \
-                .all()
-
-        if "cocktail" in request.query_params:
-            cocktails_tried = CocktailTried.objects.filter(cocktail__id=request.query_params['cocktail'])
+        cocktails_tried = CocktailTried.objects.filter(cocktail_enthusiast=bourbon_user)
 
         serializer = CocktailsTriedSerializer(cocktails_tried, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)

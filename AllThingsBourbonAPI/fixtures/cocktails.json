@@ -30,7 +30,7 @@
             "name": "Bourbon Rickey",
             "ingredients": "1 1/2oz bourbon, 1/2 lime - freshly squeezed, sparkling water - to top",
             "how_to_make": "Fill a highball glass with ice. Squeeze the lime half into the glass and drop it in. Add the bourbon and fill with sparkling water. Stir briefly to combine",
-            "cocktail_img": "https://asassyspoon.com/wp-content/uploads/cuban-old-fashioned-recipe-a-sassy-spoon-1.jpg",
+            "cocktail_img": "https://images.squarespace-cdn.com/content/v1/5fff379eac574d546e785b31/1612819017624-9FCF0DIQD92IUCT12RKX/Cocktail-Images-Artboard+5.jpg",
             "type_of_cocktail": 2,
             "staff_member": 1
         }
@@ -42,7 +42,7 @@
             "name": "Southern Knight",
             "ingredients": "2oz bourbon, 1oz lemon juice, 1/2oz strawberry syrup, top with ginger beer, 1 strawberry, 2cups ice",
             "how_to_make": "Combine bourbon, lemon juice, strawberry syrup and 1 cup of ice into shaker and shake to dilute and chill mixture. Strain into a serving glass and top with ginger beer. Garnish with a strawberry.",
-            "cocktail_img": "https://vinepair.com/wp-content/uploads/2016/08/southern-knight-social.jpg",
+            "cocktail_img": "https://vinepair.com/wp-content/uploads/2020/02/SouthernKnight_card.jpg",
             "type_of_cocktail": 2,
             "staff_member": 1
         }
@@ -94,5 +94,641 @@
             "type_of_cocktail": 4,
             "staff_member": 1
         }
+    },
+    {
+        "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 9,
+        "fields": {
+        "name": "Sazerac",
+        "ingredients": "Absinthe(to rinse), 1 sugar cube, 1/2tsp cold water, 3 dashes Peychaud's bitters, 2 dashes Angostura bitters, 1 1/4oz rye whiskey, 1 1/4oz cognac, lemon peel to garnish",
+        "how_to_make": "Rinse a chilled rocks glass with absinthe, discarding any excess, and set aside. In a mixing glass, muddle the sugar cube, water and the Peychaud’s and Angostura bitters. Add the rye and cognac, fill the mixing glass with ice and stir until well-chilled. Strain into the prepared glass. Twist the lemon peel over the drink’s surface to express the peel’s oils, then garnish with the peel.",
+        "cocktail_img": "https://www.liquor.com/thmb/p6MFrjj--xzEjTp57F-FIsjEJuo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__05__10145323__sazerac-720x720-recipe-2c78066a77ab453481aceb83c219d78f.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
     }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 10,
+        "fields": {
+        "name": "Brown Derby",
+        "ingredients": "1 1/2oz bourbon, 1oz grapefruit juice, 1/2oz honey sryup, grapefruit twist to garnish",
+        "how_to_make": "Add the bourbon, grapefruit juice and honey syrup into a shaker with ice and shake until well-chilled. Fine-strain into a cocktail glass. Express the oil from a grapefruit twist over the drink and drop the twist into the drink to garnish.",
+        "cocktail_img": "https://www.liquor.com/thmb/sdMpJJwfyslWfddZa407m0fTt24=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/brown-derby-720x720-primary-b706bf8f3c2047ef982fdc2a064d437a.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 11,
+        "fields": {
+        "name": "Kentucky Mule",
+        "ingredients": "2oz bourbon, 1/2oz lime juice, ginger beer to top, mint sprig to garnish",
+        "how_to_make": "Add the bourbon and lime juice to a Moscow Mule mug or a highball glass. Fill the mug or glass with ice and top with ginger beer. Garnish with a mint sprig.",
+        "cocktail_img": "https://www.liquor.com/thmb/BeAWMKlgK-4tnVkGoe-aVBd77Xw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Kentucky-Mule-720x720-recipe-5c0e4f6b4e3e4c678883798726299cf9.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 12,
+        "fields": {
+        "name": "Mint Julep",
+        "ingredients": "8 mint leaves, 1/4oz simple sryup, 2oz bourbon, mint sprig to garnish, angostura bitters to garnish(optional)",
+        "how_to_make": "In a Julep cup or rocks glass, lightly muddle the mint leaves in the simple syrup. Add the bourbon then pack the glass tightly with crushed ice. Stir until the cup is frosted on the outside. Top with more crushed ice to form an ice dome, and garnish with a mint sprig and a few drops of bitters (optional).",
+        "cocktail_img": "https://www.liquor.com/thmb/pUFi3g2fxWPBuSJciXkwDXX2GJk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mint-julep-720x720-primary-5e2063b906384479b345687201992bd0.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 13,
+        "fields": {
+        "name": "Bourbon Smash",
+        "ingredients": "3 lemon wedges, 2oz bourbon, 3/4oz simple sryup, 4 mint leaves, mint sprig to garnish",
+        "how_to_make": "Muddle the lemon wedges in a shaker. Add bourbon, simple syrup, mint leaves and ice, and shake until well-chilled. Double-strain into a rocks glass over fresh ice. Garnish with a mint sprig.",
+        "cocktail_img": "https://www.liquor.com/thmb/vUxfU6z5HojVapA-Hmdbkij5hWw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/whiskey-smash-720x720-recipe-c696cdf017494dbd981e51dca3f4402e.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 14,
+        "fields": {
+        "name": "Boulevardier",
+        "ingredients": "1 1/4oz bourbon (or rye), 1oz Campari, 1oz sweet vermouth, orange twist to garnish",
+        "how_to_make": "Add bourbon, Campari and sweet vermouth into a mixing glass with ice and stir until well-chilled. Strain into a rocks glass over fresh ice. Garnish with an orange twist.",
+        "cocktail_img": "https://www.liquor.com/thmb/tvyIdYnLhoLsAZMG_6FdHwtaAP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__09__12094720__Boulevardier-720x720-recipe-53da547e8cfc4bd79a393ac99891f5ba.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 15,
+        "fields": {
+        "name": "Milk Punch",
+        "ingredients": "2oz bourbon, 3oz whole milk, 1oz simple sryup, 2 dashes vanilla extract, nutmeg (freshly grated) to garnish",
+        "how_to_make": "Add bourbon, whole milk, simple syrup and vanilla extract into a shaker with ice and shake until well-chilled. Strain into a rocks glass, and garnish with freshly grated nutmeg.",
+        "cocktail_img": "https://www.liquor.com/thmb/p8_lbgGeW-VKEPskFnoM38Ri7kI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__02__01124157__bourbon-milk-punch-720x720-recipe-911cee52d59348c685e1b9d32d624d6d.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 16,
+        "fields": {
+        "name": "Hot Toddy",
+        "ingredients": "Boiling water (to fill a mug), 4 cloves, 1 lemon peel or wheel, 2tsp demerara sugar or brown sugar, 1/4oz lemon juice, 2oz bourbon",
+        "how_to_make": "Fill a mug with boiling water and let stand for a minute or two to warm. Meanwhile, stick the cloves into the lemon peel or wheel and set aside. Empty the mug and fill about halfway with fresh boiling water. Add the sugar and stir to dissolve. Add the prepared lemon peel or wheel and stir. Add the lemon juice and whiskey, and stir again.",
+        "cocktail_img": "https://www.liquor.com/thmb/AbUGSeT3hrhRmrwYXOeQ7B1iAwk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hot-toddy-720x720-primary-f04e0c5aa93b40889529338c41fc6242.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 17,
+        "fields": {
+        "name": "Whiskey Sour",
+        "ingredients": "2oz bourbon, 3/4oz lemon juice, 1/2oz simple sryup, 1/2oz egg white (optional), Angostura bitters to garnish",
+        "how_to_make": "Add bourbon, lemon juice, simple syrup and egg white, if using, to a shaker and dry-shake for 30 seconds without ice. Add ice and shake again until well-chilled. Strain into a rocks glass or a coupe. Garnish with 3 or 4 drops of Angostura bitters.",
+        "cocktail_img": "https://www.liquor.com/thmb/rSW8d-pqfyCGrTNAI4rmhfB9BWI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/whiskey-sour-720x720-primary-v2-4fc831b613964da5a19cdbfda917d7df.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 18,
+        "fields": {
+        "name": "Spicy Bourbon Citrus Punch",
+        "ingredients": "5oz fresh ginger unpeeled and thinly sliced, 1cup granulated sugar, 3/4cup water, 1/4tsp kosher salt, 3cup orange juice, 1 1/2cup bourbon, 1 1/2 sparkling mineral water, 3/4cup lemon juice",
+        "how_to_make": "Combine all ingredients in a punch bowl and mix.",
+        "cocktail_img": "https://www.slurrp.com/web/_next/image?url=https%3A%2F%2Fimages.slurrp.com%2Fprod%2Frecipe_images%2Fsouthern-living%2Fspicy-bourbon-citrus-punch-1621315986_8DITD2UWF2NC91ZNMXSC.webp%3Fimpolicy%3Dslurrp-20210601%26width%3D1200%26height%3D675&w=828&q=75",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 19,
+        "fields": {
+        "name": "Bourbon Pink Grapefruit Fizz",
+        "ingredients": "6tbsp grapefruit juice, 1/4cup grapefruit flavored sparkling water, 3tbsp bourbon, 1tbsp sage simple sryup",
+        "how_to_make": "Combine juice, bourbon and simple sryup in a glass and stir. Top with sparkling water.",
+        "cocktail_img": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/11/10/0/FNM_120120-Grapefruit-Bourbon-Fizz_s4x3_s4x3.jpg.rend.hgtvcom.686.515.suffix/1605035101583.jpeg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 20,
+        "fields": {
+        "name": "Mississippi Mudslide",
+        "ingredients": "1pt chocolate ice cream, 1pt coffee ice cream, 1cup milk, 1/2cup bourbon, garnish with whipped cream, chocolate sryup, and marshmallows",
+        "how_to_make": "Process first 4 ingredients in a blender until smooth, stopping to scrape down sides as needed. Pour into glasses. Serve immediately.",
+        "cocktail_img": "https://www.southernkissed.com/wp-content/uploads/2022/11/Mississippi-Mudslide-768x1024.jpeg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 21,
+        "fields": {
+        "name": "Summer Breeze",
+        "ingredients": "1 orange slice, 1 splash orange liqueur, 2oz bourbon, 2oz ginger ale",
+        "how_to_make": "In an old-fashioned glass, add the orange slice and a splash of orange liqueur. Muddle well. Add equal parts of bourbon and ginger ale. Stir gently. Fill the glass with ice, serve and enjoy.",
+        "cocktail_img": "https://www.thespruceeats.com/thmb/1ouUi1ZWjQauI4x1ZFhApX1DpWo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/summer-breeze-cocktail-recipe-759380-hero-01-5bdc9f4646e0fb00269b6c82.jpg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 22,
+        "fields": {
+        "name": "Suffering Bastard",
+        "ingredients": "1oz bourbon, 1oz London dry gin, 1/2oz lime juice, 2 dashes Angostura bitters, ginger beer to top, mint sprig to garnish",
+        "how_to_make": "Add the bourbon, gin, lime juice and bitters into a shaker with ice and shake until well-chilled (about 30 seconds). Strain into a Collins glass over fresh ice. Top with the ginger beer. Garnish with a mint sprig.",
+        "cocktail_img": "https://www.liquor.com/thmb/A8Cvd66WrzBAKdikoRd5OPEbQ4k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__01__31143148__suffering-bastard-720x720-article-89595d51cc1240a7a00ad8008e5cb1b2.jpg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 23,
+        "fields": {
+        "name": "Paper Plane",
+        "ingredients": "3/4oz bourbon, 3/4oz Aperol, 3/4oz Amaro Nonino Quintessentia, 3/4oz lemon juice",
+        "how_to_make": "Add the bourbon, Aperol, Amaro Nonino and lemon juice into a shaker with ice and shake until well-chilled. Strain into a coupe glass.",
+        "cocktail_img": "https://www.liquor.com/thmb/9g5Yq0i0FUfMytRY8ZzfXseoVKo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/paper-plane-720x720-primary-3e0b79b1d81c4e7e8f017093d4b27f12.jpg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 24,
+        "fields": {
+        "name": "Southern Jam",
+        "ingredients": "2oz bourbon, 1/2oz lemon juice, 5 raspberries, 1 heaping tsp raspberry jam, garnish with edible flower and raspberries",
+        "how_to_make": "Combine bourbon, lemon juice, raspberries and raspberry jam in a shaker. Shake mixture then strain over fresh ice.",
+        "cocktail_img": "https://vinepair.com/wp-content/uploads/2017/05/natalie-card.jpg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 25,
+        "fields": {
+        "name": "Bourbon Blackberry Collins",
+        "ingredients": "4 blackberries, ice, 1 1/2oz bourbon, 3/4oz lemon juice, 3/4oz simple sryup, 2oz chilled club soda",
+        "how_to_make": "In a cocktail shaker, muddle 3 blackberries. Add ice and the bourbon, lemon juice and simple syrup and shake well. Strain into a chilled, ice-filled collins glass. Stir in the club soda and garnish with the remaining blackberry.",
+        "cocktail_img": "https://www.foodandwine.com/thmb/9PiPCE0PQKW74fn_shlbUbhX97U=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-2012-cocktails-c-bourbon-blackberry-collins-a8ae0e4802f449fc96a105b7da1d213d.jpg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 26,
+        "fields": {
+        "name": "Gold Rush",
+        "ingredients": "2oz bourbon, 3/4 lemon juice, 3/4 honey syrup, lemon twist to garnish",
+        "how_to_make": "Add the bourbon, honey syrup, and lemon juice into a shaker with ice and shake until well-chilled. Strain into a chilled rocks glass over one large ice cube. Garnish with a lemon twist.",
+        "cocktail_img": "https://www.liquor.com/thmb/rBuFkKRfFNZ3wtiYZ7CmCn-lClg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__10__12140014__gold-rush-720x720-recipe-1ff0ea88d3ca4b279cb037bfa086bf31.jpg",
+        "type_of_cocktail": 1,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 27,
+        "fields": {
+        "name": "Bizzy Izzy",
+        "ingredients": "1oz pineapple juice, 1oz Amontillado sherry (preferably Lustau), 1oz rye, 3/4oz lemon juice, 3/4oz simple syrup, 1 dash Angostura bitters, 1oz chilled club soda, lemon wheel",
+        "how_to_make": "Combine 1 oz. fresh pineapple juice,1 oz. Amontillado sherry, 1 oz. rye whiskey, ¾ oz. fresh lemon juice, ¾ oz. simple syrup, and 1 dash Angostura bitters in a cocktail shaker and fill with ice. Cover and shake until well chilled, about 7 seconds. Pour 1 oz. chilled club soda into an ice-filled Collins or highball glass and strain cocktail into it. Garnish with lemon wheel.",
+        "cocktail_img": "https://assets.epicurious.com/photos/62506eae489e5db1a47f7fed/1:1/w_960,c_limit/BizzyIzzy_RECIPE_040722_31919.jpg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 28,
+        "fields": {
+        "name": "Aperol Bourbon Fizz",
+        "ingredients": "1 1/2oz bourbon, 1oz Aperol, 2tbsp simple syrup, 1/2cup club soda, orange wedge, orange peel twist",
+        "how_to_make": "Combine bourbon, Aperol, and Simple Syrup in a highball glass filled with ice. Add club soda, and squeeze an orange wedge into glass; stir to blend. Rub cut edge of orange peel twist around glass rim; add peel to glass, and serve.",
+        "cocktail_img": "https://www.southernliving.com/thmb/B1aASVQ4J0IcNGCWJQvOh8l3VuM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bourbon_drinks_2513001_webou_bourbondrinks361_0_0-1-b9dfb811aac44f928a6bcfdbebec9f3d.jpg",
+        "type_of_cocktail": 2,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 29,
+        "fields": {
+        "name": "The Nor'easter",
+        "ingredients": "1oz lime juice, 4oz bourbon, 1oz maple syrup, 2oz cold gigner beer, lime slice",
+        "how_to_make": "Combine lime juice, bourbon and syrup to taste in a small pitcher or cocktail shaker. If possible, let mixture chill in refrigerator or freezer until very cold. Pour over ice in a rocks glass and top with ginger beer. Depending on the sweetness of the ginger beer, you may want to add a little more lime juice. Garnish with a lime slice.",
+        "cocktail_img": "https://static01.nyt.com/images/2014/04/30/dining/30PAIR1/30PAIR1-blog480-v2.jpg?w=768&q=75",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 30,
+        "fields": {
+        "name": "Smoke, Spice, & Everything Nice",
+        "ingredients": "1 oz bourbon, 1oz rye, 1/2oz mezcal, 1/2oz strawberry syrup, 2 dashes aromatic bitters",
+        "how_to_make": "Combine all ingredients in a cocktail glass with ice. Stir to chill and combine. Fine strain into your cocktail glass over fresh ice. Garnish and enjoy!",
+        "cocktail_img": "https://vinepair.com/wp-content/uploads/2018/09/SmokedSpiceEverythingNice_Card-375x450.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 31,
+        "fields": {
+        "name": "Grownup Thin Mint",
+        "ingredients": "1oz bourbon, 3/4oz Vandermint Liqueur or chocolate liqueur, 1/4oz Brancamenta, 1 1/2oz vanilla almond milk, freshly whipped heavy cream, garnish with crumbled mint cookies",
+        "how_to_make": "Combine all ingredients except whipped cream and garnish into a cocktail shaker with one large cube. Lightly shake to chill, and then strain into glass. Top with freshly whipped heavy cream, and garnish with crumbled mint cookie.",
+        "cocktail_img": "https://vinepair.com/wp-content/uploads/2019/02/thinmint_card-375x450.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 32,
+        "fields": {
+        "name": "Bourbon Apple Cider Sour",
+        "ingredients": "3oz apple cider, 2oz bourbon, 3/4oz cinnamon simple sryup, 1oz lemon juice, cinnamon stick to garnish",
+        "how_to_make": "Add the apple cider, whiskey, lemon juice, and simple syrup to a cocktail shaker filled with ice and shake. Strain into a glass filled with ice. Garnish with a cinnamon stick and serve.",
+        "cocktail_img": "https://herbsandflour.com/wp-content/uploads/2021/11/Apple-Cider-Whiskey-Sour-360x360.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 33,
+        "fields": {
+        "name": "Ruby Sour",
+        "ingredients": "1 1/2oz bourbon, 1/2oz aromatic bitters, 1oz lemon juice, 1/2oz orange juice, 1/2oz agave syrup, 1oz dry red wine, 1 egg white",
+        "how_to_make": "Combine everything except the wine in a cocktail shaker with ice. Shake hard to chill and combine. Fine strain into a coupe glass. Float red wine on top. Garnish and enjoy!",
+        "cocktail_img": "https://vinepair.com/wp-content/uploads/2018/04/natalie-pink-sour-card-375x450.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 34,
+        "fields": {
+        "name": "Banker's Choice",
+        "ingredients": "2oz coffee-infused bourbon, 1/2oz maple syrup, 1/4oz Lazzaroni Amaro, 1/2oz creme de peche",
+        "how_to_make": "Fill a cordial, coupe, or footed Old-Fashioned glass with crushed ice to chill. In a mixing glass, combine all ingredients with ice and stir for 45 seconds. Empty ice from cocktail glass. Strain cocktail into glass and serve neat.",
+        "cocktail_img": "https://vinepair.com/wp-content/uploads/2018/05/bankers-choice-card-375x450.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 35,
+        "fields": {
+        "name": "Sweeney Todd",
+        "ingredients": "2oz rye, 1/2oz lemon juice, 1/2oz winter spice syrup, 4oz hot water",
+        "how_to_make": "In a glass mug, combine all of the ingredients. Give it a quick stir, then garnish.",
+        "cocktail_img": "https://imbibemagazine.com/wp-content/uploads/2021/12/bar-shiru-hot-toddy-crdt-daniel-gahr-768x512.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 36,
+        "fields": {
+        "name": "Bourbon Pecan Pie",
+        "ingredients": "1oz bourbon, 1 1/2oz Evangeline Pecan Praline liqueur, 1/2oz vodka",
+        "how_to_make": "Pour all ingredients over ice and stir.",
+        "cocktail_img": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_683/https://basilandbubbly.com/wp-content/uploads/2016/11/bourbon-pecan-pie-5-683x1024.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 37,
+        "fields": {
+        "name": "The Roast & Toast",
+        "ingredients": "1 1/2oz bourbon, 1 1/4oz amaro, 1/2oz amaretto, 2oz cold brew coffee, 1/4oz orange juice, 1 marshmallow",
+        "how_to_make": "Make the cold brew coffee 12-24 hours before making the cocktail. Add bourbon, coffee, orange juice, amaro and brulee liqueur to a shaker. Add ice. Shake and strain into a large rocks glass. Skewer the marshmallow on a bamboo spear or a cocktail pick. When ready to serve, light the marshmallow on fire with a culinary torch. Before drinking, blow the fire out, take a bite of the marshmallow with a sip of your cocktail.",
+        "cocktail_img": "https://www.gastronomblog.com/wp-content/uploads/2016/12/The-Roast-and-Toast-a-Bourbon-Cocktail-735x488.jpg.webp",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 38,
+        "fields": {
+        "name": "Bourbon Hot Chocolate",
+        "ingredients": "1/3cup unsweetened cocoa powder, 1/2cup granulated sugar, a dash of salt, 1/3cup boiling water, 3 1/2cups reduced fat milk, 1tsp vanilla, 2tbsp half and half (optional), 8tbsp bourbon, 1cup mini marshmallows",
+        "how_to_make": "In a medium saucepan stir together the cocoa powder, sugar, and salt. Stir in the boiling water until the sugar has dissolved and the cocoa isn't lumpy. Turn the burner to medium heat. Stir in the milk. Let the milk heat up, stirring occasionally. Watch it carefully so it doesn't scorch!! Remember you aren't cooking the milk. Just warming it. When the hot chocolate has reached your desired drinking temperature, remove it from the heat and stir in the vanilla, half and half, and bourbon. Divide the hot chocolate between 4 mugs, top each with marshmallows, and serve immediately.",
+        "cocktail_img": "https://www.sugardishme.com/wp-content/uploads/2013/01/Bourbon-Spiked-Hot-Chocolate1.jpg.webp",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 39,
+        "fields": {
+        "name": "Winter Berries Cocktail",
+        "ingredients": "3oz sparkling wine, 1oz bourbon, 1/2oz dark berry liqueur, 1 thin lemon half moon slice",
+        "how_to_make": "Place wine, bourbon, and liqueur in a wine glass filled with ice; stir gently to combine. Add lemon slice, and serve.",
+        "cocktail_img": "https://www.foodandwine.com/thmb/8tYW1GgZ5Zf39yGoyWC-bFONctk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/winter-berries-cocktail-FT-RECIPE1221-6bdb7ce6d14b48f9896425d3305c9e47.jpg",
+        "type_of_cocktail": 3,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 40,
+        "fields": {
+        "name": "Forbidden Sour",
+        "ingredients": "1oz bourbon, 1oz Pama pomegranate liqueur, 1oz lemon juice, 1/2oz simple syrup, garnish with orange peel and cherry",
+        "how_to_make": "Add the bourbon, pomegranate liqueur, lemon juice and simple syrup into a shaker with ice and shake until well-chilled. Strain into a rocks glass over fresh ice. Garnish with an orange wheel and a cherry.",
+        "cocktail_img": "https://www.liquor.com/thmb/DIvmi0MTIIK5nMI1f4v01w0QTyc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/forbidden-sour-720x720-primary-c7b98b6642624770b827f08949387546.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 41,
+        "fields": {
+        "name": "Stiletto",
+        "ingredients": "1 1/2oz bourbon, 1/2oz amaretto, 1/2oz lemon juice, 1-2 maraschino cherries, ice",
+        "how_to_make": "Fill a cocktail shaker with ice. Add the bourbon, amaretto and lemon juice and shake well. Strain into a rocks glass over ice and garnish with the cherry or cherries.",
+        "cocktail_img": "https://www.foodandwine.com/thmb/j2UKo39wnXFIgRPUj0eTRdurhLg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/fw2005_xl_stiletto-257e42b2a5a24ab7878baf9f78e79c1d.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 42,
+        "fields": {
+        "name": "Sage Brown Derby",
+        "ingredients": "2oz bourbon, 1oz red or pink grapefruit juice, 1/2oz lime juice, 1/4oz agave syrup, 2 dashes Angostura bitters, 1 fresh sage leaf",
+        "how_to_make": "Combine everything except sage leaf in a cocktail shaker and fill with ice. Shake until the outside is frosty, about 20 seconds. Strain into a coupe glass. Rub and slap the sage leaf with your palms until it releases its fragrance. Place on top of the cocktail.",
+        "cocktail_img": "https://omnivorescookbook.com/wp-content/uploads/2015/12/1512_Whiskey-Grapefruit-Cocktail_002.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 43,
+        "fields": {
+        "name": "Strawberry & Maple Brown Derby",
+        "ingredients": "1 1/2oz bourbon, 1oz grapefruit juice, 1/2oz maple syrup, 3 chopped strawberries plus more for garnish",
+        "how_to_make": "Fill cocktail shaker with bourbon, grapefruit juice, maple syrup, and chopped strawberries. Shake mixture then double strain into the serving glass. Garnish with a strawberry.",
+        "cocktail_img": "https://vinepair.com/wp-content/uploads/2020/04/StrawberryAndMapleBrownDerby_card-375x450.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 44,
+        "fields": {
+        "name": "Bourbon Cider Mule",
+        "ingredients": "1/4cup bourbon, 1/4cup filtered apple cider, 2tbsp lime juice, 1/2cup nonalcoholic ginger beer, ice (divided), garnish with lime wheel and apple slice",
+        "how_to_make": "Combine bourbon, filtered apple cider, and fresh lime juice in a cocktail shaker filled with ice. Shake vigorously until chilled, about 30 seconds, and strain into a copper mug or rocks glass filled with ice. Top with nonalcoholic ginger beer, and garnish with a lime wheel and an apple slice.",
+        "cocktail_img": "https://www.southernliving.com/thmb/orQ-JWTZ1CXI1322R4p1L6ZifgE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2664901_Bount_0390-2000-9d5234d628744626a84ff0a3eea8f9e4.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 45,
+        "fields": {
+        "name": "Spicy Jalapeno Mule",
+        "ingredients": "2oz bourbon, 3oz ginger beer, 5 jalapeno slices, 1/2oz lime juice, 1/4oz simple syrup, fresh mint, lime wheel",
+        "how_to_make": "Add the bourbon, jalapeno slices, and lime juice to a Moscow Mule mug or a highball glass. Fill the mug or glass with ice and top with ginger beer. Garnish with a mint sprig.",
+        "cocktail_img": "https://assets3.thrillist.com/v1/image/3064111/1536x864/crop;webp=auto;jpeg_quality=60;progressive.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 46,
+        "fields": {
+        "name": "Bulldog Smash",
+        "ingredients": "6 mint leaves, 1/2 lemon cut into wedges, 1/2 peach pitted and diced, 1tsp simple syrup, 2oz bourbon, 3/4oz Cointreau, mint sprig to garnish",
+        "how_to_make": "In a shaker, muddle the mint leaves, lemon, peach and simple syrup. Add the bourbon and Cointreau, plus ice, and shake until well-chilled. Strain into an Old Fashioned glass filled with crushed ice. Garnish with a sprig of fresh mint.",
+        "cocktail_img": "https://www.liquor.com/thmb/mOy3LMJIX-ZU1lPRvOA5Gtc7HLY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bulldog-smash-720x720-primary-135610e15a82414b9fa992d11bed1519.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+        }
+    },
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 47,
+        "fields": {
+        "name": "Basil Bourbon Orange Smash",
+        "ingredients": "2oz bourbon, 2oz orange juice, 2tbsp basil simple syrup, 2-3 orange wedges, orange slice, basil sprig",
+        "how_to_make": "Muddle bourbon, orange juice, Basil Simple Syrup, and orange wedges in a cocktail shaker to release flavors. Fill shaker with ice. Cover with lid, and shake vigorously until thoroughly chilled, about 15 seconds. Strain mixture into a highball glass filled with crushed ice. Garnish with orange slice and basil sprig.",
+        "cocktail_img": "https://www.southernliving.com/thmb/9eMl-GvOdmQ-nkZEGGIHCeocXY4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bourbon-drinks-2513001_webou_bourbondrinks184_0-2000-16c807a7875f4c4c970e04d87c69ab54.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 48,
+        "fields": {
+        "name": "Apricot Nectarine Julep",
+        "ingredients": "2oz apricot-nectarine puree, 2oz bourbon, 15 mint leaves, finely crushed ice, mint sprig to garnish",
+        "how_to_make": "Muddle mint leaves and 1/4 cup apricot-nectarine puree in bottom of a julep cup. Add bourbon and crushed or pebbled ice to cover; stir until chilled, about 20 seconds. Fill cup with additional ice, adding enough to form a small mound on top. Pour 2 to 4 tablespoons apricot-nectarine puree over ice. Garnish with a mint sprig, and serve with a short julep straw.",
+        "cocktail_img": "https://www.foodandwine.com/thmb/ymmT_0qWVuX23vrXLW82p-hqVEI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Apricot-Nectarine-Julep-FT-RECIPE0822-2000-3564025efd6543128e4d55bb1a93b1eb.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 49,
+        "fields": {
+        "name": "Bourbon Tea Julep",
+        "ingredients": "1 1/2cup bourbon, 2 black tea bags (or 2tsp loose black tea), 1/2cup Oleo Saccharum, 1/2cup mint leaves, crushed ice, mint sprig for garnish",
+        "how_to_make": "Combine bourbon and tea bags in a 1-quart mason jar. Let steep 15 minutes. Discard tea bags (or strain mixture, if using loose tea), and return infused bourbon to jar. Add oleo saccharum, mint leaves, and 1 cup ice; cover tightly with lid. Shake vigorously until chilled. Fill 6 chilled mint julep cups with crushed ice; strain mixture into prepared cups. Garnish with mint sprigs.",
+        "cocktail_img": "https://www.foodandwine.com/thmb/KFlasyPgFU_973Te72qbnQOAIxE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bourbon-tea-julep-FT-RECIPE1020-8d231e8b25b14cb38a931c88d6ad5984.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 50,
+        "fields": {
+        "name": "Shadow Woman",
+        "ingredients": "1 1/2oz bourbon, 1/2oz pear brandy, 1tsp honey, 2 dashes Angostura bitters, ice cubes, 1 large ice cube, 1 orange peel twist, 1 lemon peel twist",
+        "how_to_make": "Combine bourbon, brandy, honey, and bitters in a mixing glass; fill mixing glass nearly to the top with ice cubes. Gently stir mixture until well combined, chilled, and diluted, 20 to 30 seconds. Pour mixture through a cocktail strainer into a rocks glass over a single large ice cube. Garnish with orange and lemon peel twists, and serve.",
+        "cocktail_img": "https://www.foodandwine.com/thmb/O_gGGN-Ji4y_7NN4p7E_8VulYnU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Shadow-Woman-FT-RECIPE0322-9ea42a61634447239147fd3d7365d263.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 51,
+        "fields": {
+        "name": "Reverse Manhattan",
+        "ingredients": "2oz sweet vermouth blend, 1oz rye, 2 dashes Angostura bitters, marasca cherry to garnish",
+        "how_to_make": "Add the sweet vermouth blend, rye whiskey and bitters into a mixing glass with ice and stir until well-chilled. Strain into a chilled cocktail glass. Garnish with a marasca cherry.",
+        "cocktail_img": "https://www.liquor.com/thmb/-_b1nBLB6MCewG1mbG8MrDjR9wc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__01__14103211__reverse-manhattan-720x720-recipe-82b4be98cc9b490ba9a44f94ece1128b.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 52,
+        "fields": {
+        "name": "Pumpkin Sazerac",
+        "ingredients": "2oz rye, 1/2oz pumpkin syrup, 3 dashes Peychaud's bitters, 1/4oz absinthe, lemon twist to garnish",
+        "how_to_make": "Chill a rocks glass in the freezer for 15 minutes. Add the cognac (or rye whiskey), pumpkin syrup and bitters into a mixing glass with ice and stir for 30 seconds. Remove the rocks glass from the freezer and add the absinthe, swirling it around the inside, then discard the excess. Strain the stirred mixture into the prepared glass. Twist a swath of lemon peel over the glass to express the oils onto the drink, then discard.",
+        "cocktail_img": "https://www.liquor.com/thmb/OJO70CrzRP-WIN8yFgv7u6eWAH4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pumpkin-sazerac-720x720-primary-62b0214f91904fdf962e9db2f06528ee.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 53,
+        "fields": {
+        "name": "Twelve Limit Mile",
+        "ingredients": "1oz rum, 1/2oz rye, 1/2oz cognac, 1/2oz grenadine, 1/2oz lemon juice",
+        "how_to_make": "Combine all of the ingredients in a shaker with ice, then shake to chill. Strain into a rocks glass and garnish.",
+        "cocktail_img": "https://imbibemagazine.com/wp-content/uploads/2020/07/sugar-house-12-mile-limit-gallery-crdt-tk.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 54,
+        "fields": {
+        "name": "Boulevardier With a Twist",
+        "ingredients": "1oz bourbon, 1/2oz cognac, 3/4oz campari, 3/4oz sweet vermouth, lemon peel twist",
+        "how_to_make": "In a mixing glass, combine all ingredients except for the lemon/orange peel. Fill the glass halfway with ice, then stir vigorously about a dozen times. Strain into a chilled couple glass. Squeeze/twist the lemon (or orange) peel over the glass to extract oils, rub the peel around the inside rim of the glass and serve with the cocktail.",
+        "cocktail_img": "https://kitchenswagger.com/wp-content/uploads/2019/08/boulevardier-with-a-twist1-768x1134.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 55,
+        "fields": {
+        "name": "Triple B Milk Punch",
+        "ingredients": "3cups cold whole milk, 12oz chilled bourbon, 12oz chilled brandy, 1 1/2cups cold whole buttermilk, 3/4cup honey, 1 1/2tsp vanilla extract, 4 cinnamon sticks, 1 medium orange thinly sliced, freshly grated nutmeg, ice",
+        "how_to_make": "Whisk together first 6 ingredients in a half-gallon pitcher until combined. Chill at least 30 minutes or up to 1 week. Pour into a punch bowl. Add cinnamon sticks and orange slices, and garnish with nutmeg. Serve over ice.",
+        "cocktail_img": "https://www.southernliving.com/thmb/1gk5dqSpK8iNFYzj36ys7yNfX68=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2652001_White_Christmas_Pavlova_and_Milk_Punch_091-2000-f61112a3036f45a597c23a08c0161f48.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 56,
+        "fields": {
+        "name": "Bourbon Chai Toddy",
+        "ingredients": "3cups hot water, 4 black tea bags, 4 green cardamom pods (crushed), 4 whole allspice berries (crushed), 4 whole cloves, 1 star anise, 2 whole cinnamon sticks, 1/2tsp ground nutmeg, 1tsp ground ginger, 2tsp vanilla extract, 3cups vanilla almond milk, 1/4cup honey, 1/2cup bourbon",
+        "how_to_make": "In a medium saucepan, combine the water, tea bags, spices, ginger, and vanilla. Bring to a boil over medium/high heat and then reduce to a simmer. Stir in the almond milk and honey, whisking to combine. Remove from the heat and allow to sit for 10 minutes to steep. Strain through a fine mesh sieve to remove the bulk spices and tea bags, making sure only the liquid remains. Pour into a heat proof serving pitcher and stir in the bourbon.",
+        "cocktail_img": "https://www.thecookierookie.com/wp-content/uploads/2018/11/bourbon-chai-tea-latte-recipe-8-of-10.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+},
+
+{
+    "model": "AllThingsBourbonAPI.cocktail",
+        "pk": 57,
+        "fields": {
+        "name": "Tumeric Hot Toddy",
+        "ingredients": "1 1/2oz Amontillado Sherry, 1oz bourbon, 1oz tumeric syrup, 1/2oz lemon juice, hot water",
+        "how_to_make": "In a warmed mug, add the first 4 ingredients, top with 2 to 3 oz. of hot water, stir, then garnish.",
+        "cocktail_img": "https://imbibemagazine.com/wp-content/uploads/2021/01/turmeric-hot-toddy-crdt-john-valls-768x940.jpg",
+        "type_of_cocktail": 4,
+        "staff_member": 1
+    }
+}
 ]
