@@ -61,7 +61,7 @@ class CocktailsTriedView(ViewSet):
         Returns:
         Response -- Empty body with 204 status code
         """
-        cocktail = Cocktail.objects.get(pk=pk)
+        cocktail = Cocktail.objects.get(pk=request.data['cocktail'])
 
         cocktail_tried = CocktailTried.objects.get(pk=pk)
         cocktail_tried.comments = request.data['comments']

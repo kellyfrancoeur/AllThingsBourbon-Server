@@ -1,4 +1,5 @@
 from django.http import HttpResponseServerError
+from django.core.exceptions import ValidationError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
@@ -10,11 +11,18 @@ class BourbonView(ViewSet):
         """Handle GET requests for single bourbon
 
         Returns:
-            Response -- JSON serialized bourbon
+            Response -- JSON serialized bourbon instance
         """
-        bourbon = Bourbon.objects.get(pk=pk)
-        serializer = BourbonSerializer(bourbon)
-        return Response(serializer.data)
+        try:
+            bourbon = Bourbon.objects.get(pk=pk)
+            serializer = BourbonSerializer(bourbon, context={'request': request})
+            return Response(serializer.data)
+        
+        except Bourbon.DoesNotExist as ex:
+            return Response({'message': 'Bourbon does not exist'}, status=status.HTTP_404_NOT_FOUND)
+
+        except Exception as ex:
+            return HttpResponseServerError(ex) 
 
     def list(self, request):
         """Handle GET requests to get all bourbons
@@ -33,24 +41,40 @@ class BourbonView(ViewSet):
         Response -- JSON serialized bourbon instance
         """
         staff_member = BourbonStaff.objects.get(user=request.auth.user)
-        type_of_bourbon = BourbonType.objects.get(pk=request.data['type_of_bourbon'])
 
-        bourbon = Bourbon.objects.create(
-            name = request.data['name'],
-            proof = request.data['proof'],
-            aroma = request.data['aroma'],
-            taste = request.data['taste'],
-            finish = request.data['finish'],
-            description = request.data['description'],
-            made_in = request.data['made_in'],
-            link_to_buy = request.data['link_to_buy'],
-            bourbon_img = request.data['bourbon_img'],
-            type_of_bourbon = type_of_bourbon,
-            staff_member = staff_member
-        ) 
+        bourbon = Bourbon()
 
-        serialized = BourbonSerializer(bourbon, many=False)
-        return Response(serialized.data, status=status.HTTP_201_CREATED)
+        try:
+            bourbon.name = request.data["name"]
+            bourbon.proof = request.data["proof"]
+            bourbon.aroma = request.data["aroma"]
+            bourbon.taste = request.data["taste"]
+            bourbon.finish = request.data["finish"]
+            bourbon.description = request.data["description"]
+            bourbon.made_in = request.data["made_in"]
+            bourbon.link_to_buy = request.data["link_to_buy"]
+            bourbon.bourbon_img = request.data["bourbon_img"]
+        
+        except KeyError as ex:
+            return Response({'message': 'Incorrect key was sent in request'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        bourbon.staff_member = staff_member
+
+        try:
+            type = BourbonType.objects.get(pk=request.data["type_of_bourbon"])
+            bourbon.type_of_bourbon = type
+        
+        except BourbonType.DoesNotExist as ex:
+            return Response({'message': 'Bourbon type provided is not valid'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            bourbon.save()
+            serializer = BourbonSerializer(bourbon, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        except ValidationError as ex:
+            return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
+        except ValueError as ex:
+            return Response({"reason": "You passed some bad data"}, status=status.HTTP_400_BAD_REQUEST)
 
     def update(self, request, pk=None):
         """Handle PUT requests for a bourbon
@@ -58,37 +82,48 @@ class BourbonView(ViewSet):
         Returns:
         Response -- Empty body with 204 status code
         """
-        type_of_bourbon = BourbonType.objects.get(pk=request.data['type_of_bourbon'])
         staff_member = BourbonStaff.objects.get(user=request.auth.user)
 
         bourbon = Bourbon.objects.get(pk=pk)
-        bourbon.name = request.data['name']
-        bourbon.proof = request.data['proof']
-        bourbon.aroma = request.data['aroma']
-        bourbon.taste = request.data['taste']
-        bourbon.finish = request.data['finish']
-        bourbon.description = request.data['description']
-        bourbon.made_in = request.data['made_in']
-        bourbon.link_to_buy = request.data['link_to_buy']
-        bourbon.bourbon_img = request.data['bourbon_img']
-        bourbon.type_of_bourbon = type_of_bourbon
+        bourbon.name = request.data["name"]
+        bourbon.proof = request.data["proof"]
+        bourbon.aroma = request.data["aroma"]
+        bourbon.taste = request.data["taste"]
+        bourbon.finish = request.data["finish"]
+        bourbon.description = request.data["description"]
+        bourbon.made_in = request.data["made_in"]
+        bourbon.link_to_buy = request.data["link_to_buy"]
+        bourbon.bourbon_img = request.data["bourbon_img"]
         bourbon.staff_member = staff_member
 
-        bourbon.save()
+        try:
+            type = BourbonType.objects.get(pk=request.data["type_of_bourbon"])
+            bourbon.type_of_bourbon = type
 
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+            bourbon.save()
+        
+        except ValueError:
+            return Response({"reason": "You passed some bad data"}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
     
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a bourbon
 
         Returns:
-        Response -- Empty body with 204 status code
+        Response -- Empty body with 204, 404, 500 status code
         """
+        try:
+            bourbon = Bourbon.objects.get(pk=pk)
+            bourbon.delete()
 
-        bourbon = Bourbon.objects.get(pk=pk)
-        bourbon.delete()
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
+        
+        except Bourbon.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        except Exception as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class BourbonStaffSerializer(serializers.ModelSerializer):
     class Meta:

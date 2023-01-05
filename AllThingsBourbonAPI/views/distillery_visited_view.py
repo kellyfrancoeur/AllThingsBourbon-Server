@@ -61,7 +61,7 @@ class DistilleriesVisitedView(ViewSet):
         Returns:
         Response -- Empty body with 204 status code
         """
-        distillery = Distillery.objects.get(pk=pk)
+        distillery = Distillery.objects.get(pk=request.data['distillery'])
 
         distillery_visited = DistilleryVisited.objects.get(pk=pk)
         distillery_visited.comments = request.data['comments']

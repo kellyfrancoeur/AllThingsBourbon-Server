@@ -14,9 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.conf.urls import include 
+from django.conf.urls import include
 from django.urls import path
-from AllThingsBourbonAPI.views import register_user, login_user 
+from AllThingsBourbonAPI.views import register_user, login_user
 from django.conf.urls import include
 from rest_framework import routers
 from AllThingsBourbonAPI.views import BourbonView, CocktailView, DistilleryView, CocktailTypeView, BourbonTypeView, BourbonUserView, BourbonStaffView, BourbonsTriedView, CocktailsTriedView, DistilleriesVisitedView, DescriptorView
@@ -33,11 +33,12 @@ router.register(r'bourbonstaffs', BourbonStaffView, 'bourbonstaff')
 router.register(r'bourbonusers', BourbonUserView, 'bourbonuser')
 router.register(r'bourbonstried', BourbonsTriedView, 'bourbontried')
 router.register(r'cocktailstried', CocktailsTriedView, 'cocktailtried')
-router.register(r'distilleriesvisited', DistilleriesVisitedView, 'distilleryvisited')
+router.register(r'distilleriesvisited',
+                DistilleriesVisitedView, 'distilleryvisited')
 
 urlpatterns = [
-    path('register', register_user), 
-    path('login', login_user), 
+    path('register', register_user),
+    path('login', login_user),
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
 ]
