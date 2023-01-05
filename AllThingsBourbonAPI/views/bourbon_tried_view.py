@@ -77,7 +77,7 @@ class BourbonsTriedView(ViewSet):
         Returns:
         Response -- Empty body with 204 status code
         """
-        bourbon = Bourbon.objects.get(pk=pk)
+        bourbon = Bourbon.objects.get(pk=request.data['bourbon'])
 
         tried = BourbonTried.objects.get(pk=pk)
         tried.comments = request.data['comments']

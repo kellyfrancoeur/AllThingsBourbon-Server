@@ -1,8 +1,9 @@
 from django.http import HttpResponseServerError
+from django.core.exceptions import ValidationError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from AllThingsBourbonAPI.models import Cocktail, CocktailType, BourbonUser, BourbonStaff
+from AllThingsBourbonAPI.models import Cocktail, CocktailType, BourbonStaff
 
 class CocktailView(ViewSet):
 
@@ -12,9 +13,16 @@ class CocktailView(ViewSet):
         Returns:
             Response -- JSON serialized cocktail
         """
-        cocktail = Cocktail.objects.get(pk=pk)
-        serializer = CocktailSerializer(cocktail)
-        return Response(serializer.data)
+        try:
+            cocktail = Cocktail.objects.get(pk=pk)
+            serializer = CocktailSerializer(cocktail, context={'request': request})
+            return Response(serializer.data)
+        
+        except Cocktail.DoesNotExist as ex:
+            return Response({'message': 'Cocktail does not exist'}, status=status.HTTP_404_NOT_FOUND)
+
+        except Exception as ex:
+            return HttpResponseServerError(ex) 
 
     def list(self, request):
         """Handle GET requests to get all cocktails
@@ -33,19 +41,35 @@ class CocktailView(ViewSet):
         Response -- JSON serialized cocktail instance
         """
         staff_member = BourbonStaff.objects.get(user=request.auth.user)
-        type_of_cocktail = CocktailType.objects.get(pk=request.data['type_of_cocktail'])
 
-        cocktail = Cocktail.objects.create(
-            name = request.data['name'],
-            ingredients = request.data['ingredients'],
-            how_to_make = request.data['how_to_make'],
-            cocktail_img = request.data['cocktail_img'],
-            type_of_cocktail = type_of_cocktail,
-            staff_member = staff_member
-        ) 
+        cocktail = Cocktail()
 
-        serialized = CocktailSerializer(cocktail, many=False)
-        return Response(serialized.data, status=status.HTTP_201_CREATED)
+        try:
+            cocktail.name = request.data["name"]
+            cocktail.ingredients = request.data["ingredients"]
+            cocktail.how_to_make = request.data["how_to_make"]
+            cocktail.cocktail_img = request.data["cocktail_img"]
+        
+        except KeyError as ex:
+            return Response({'message': 'Incorrect key was sent in request'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        cocktail.staff_member = staff_member
+
+        try:
+            type = CocktailType.objects.get(pk=request.data["type_of_cocktail"])
+            cocktail.type_of_cocktail = type
+        
+        except CocktailType.DoesNotExist as ex:
+            return Response({'message': 'Cocktail type provided is not valid'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        try:
+            cocktail.save()
+            serializer = CocktailSerializer(cocktail, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        except ValidationError as ex:
+            return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
+        except ValueError as ex:
+            return Response({"reason": "You passed some bad data"}, status=status.HTTP_400_BAD_REQUEST)
 
     def update(self, request, pk=None):
         """Handle PUT requests for a cocktail
@@ -53,32 +77,45 @@ class CocktailView(ViewSet):
         Returns:
         Response -- Empty body with 204 status code
         """
-        type_of_cocktail = CocktailType.objects.get(pk=request.data['type_of_cocktail'])
+
         staff_member = BourbonStaff.objects.get(user=request.auth.user)
 
         cocktail = Cocktail.objects.get(pk=pk)
-        cocktail.name = request.data['name']
-        cocktail.ingredients = request.data['ingredients']
-        cocktail.how_to_make = request.data['how_to_make']
-        cocktail.cocktail_img = request.data['cocktail_img']
-        cocktail.type_of_cocktail = type_of_cocktail
+        cocktail.name = request.data["name"]
+        cocktail.ingredients = request.data["ingredients"]
+        cocktail.how_to_make = request.data["how_to_make"]
+        cocktail.cocktail_img = request.data["cocktail_img"]
         cocktail.staff_member = staff_member
 
-        cocktail.save()
+        try:
+            type = CocktailType.objects.get(pk=request.data["type_of_cocktail"])
+            cocktail.type_of_cocktail = type
 
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
-    
+            cocktail.save()
+        
+        except ValueError:
+            return Response({"reason": "You passed some bad data"}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a cocktail
 
         Returns:
-        Response -- Empty body with 204 status code
+        Response -- Empty body with 204, 404, or 500 status code
         """
 
-        cocktail = Cocktail.objects.get(pk=pk)
-        cocktail.delete()
+        try:
+            cocktail = Cocktail.objects.get(pk=pk)
+            cocktail.delete()
 
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
+        
+        except Cocktail.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
+        except Exception as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class BourbonStaffSerializer(serializers.ModelSerializer):
     class Meta:
